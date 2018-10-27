@@ -1,16 +1,28 @@
 -
   var collections = [
-    { name: 'Nomad', logo: 'nomad.svg', image: 'nomad.jpg' },
-    { name: 'Unfold', logo: 'unfold.svg', image: 'unfold.jpg' },
-    { name: 'World of Wonder', logo: 'wow.svg', image: 'wow.jpg' },
-    { name: 'Zeus', logo: 'zeus.svg', image: 'zeus.jpg' },
-    { name: 'Nautical', logo: 'nautical.svg', image: 'nautical.jpg' }
+    { name: 'Nomad', logo: 'nomad_white.svg', image: 'nomad.jpg' },
+    { name: 'Unfold', logo: 'unfold_white.svg', image: 'unfold.jpg' },
+    { name: 'World of Wonder', logo: 'wow_white.svg', image: 'wow.jpg' },
+    { name: 'Zeus', logo: 'zeus_white.svg', image: 'zeus.jpg' },
+    { name: 'Nautical', logo: 'nautical_white.svg', image: 'nautical.jpg' }
   ]
 
-section.collection-slider
-  each collection in collections
-    article.collection(style="background-image: url('../assets/images/collection_slider/'#{collection.image})")
-      figure.collection-name 
-        img(src="../assets/images/collection_slider/" + collection.logo, alt= collection.name)
+section.collections
+  .navigation
+    .item(data-collection-nav-index="0")
+    .item(data-collection-nav-index="1")
+    .item(data-collection-nav-index="2")
+    .item(data-collection-nav-index="3")
+    .item(data-collection-nav-index="4")
+  each collection, index in collections
+    - var img = '../assets/images/collection_slider/' + collection.image;
+    - var bgimage = 'background-image: url("' + img + '")';
+    article.collection.flex-container.align-center-middle(style= bgimage data-collection-index= index)
+      - var collogo = '../assets/product_logos/' + collection.logo; 
+      - var colbgimage = 'background-image: url("' + collogo + '")';
+      .collection-name.flex-container.align-center-middle(style= colbgimage) 
+        .actions
+          button.button.primary View Collection
+          button.button.secondary Customize
       
 
