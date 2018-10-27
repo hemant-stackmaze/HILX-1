@@ -1,0 +1,23 @@
+//fonts
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600,700');
+
+p {
+ font-size: 20px;
+ font-weight: 300;
+}
+
+button {
+  text-transform: uppercase;
+}
+
+.page-section {
+  padding: 150px 0;
+
+  &.no-bottom-pad {
+    padding-bottom: 0;
+  }
+
+  &.no-top-pad {
+    padding-top: 0;
+  }
+}

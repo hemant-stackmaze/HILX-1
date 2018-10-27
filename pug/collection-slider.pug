@@ -1,0 +1,16 @@
+-
+  var collections = [
+    { name: 'Nomad', logo: 'nomad.svg', image: 'nomad.jpg' },
+    { name: 'Unfold', logo: 'unfold.svg', image: 'unfold.jpg' },
+    { name: 'World of Wonder', logo: 'wow.svg', image: 'wow.jpg' },
+    { name: 'Zeus', logo: 'zeus.svg', image: 'zeus.jpg' },
+    { name: 'Nautical', logo: 'nautical.svg', image: 'nautical.jpg' }
+  ]
+
+section.collection-slider
+  each collection in collections
+    article.collection(style="background-image: url('../assets/images/collection_slider/'#{collection.image})")
+      figure.collection-name 
+        img(src="../assets/images/collection_slider/" + collection.logo, alt= collection.name)
+      
+

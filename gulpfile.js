@@ -1,4 +1,5 @@
 var gulp          = require('gulp');
+var pug           = require('gulp-pug');
 var browserSync   = require('browser-sync').create();
 var $             = require('gulp-load-plugins')();
 var autoprefixer  = require('autoprefixer');
@@ -7,6 +8,12 @@ var sassPaths = [
   'node_modules/foundation-sites/scss',
   'node_modules/motion-ui/src'
 ];
+
+function html(){
+  return gulp.src('pug/*.pug')
+    .pipe(pug())
+    .pipe(gulp.dest('html/'))
+};
 
 function sass() {
   return gulp.src('scss/app.scss')
@@ -27,10 +34,13 @@ function serve() {
     server: "./"
   });
 
+  gulp.watch("pug/*.pug", html);//.on('change', browserSync.reload);
   gulp.watch("scss/*.scss", sass);
+  gulp.watch("html/*.html").on('change', browserSync.reload);
   gulp.watch("*.html").on('change', browserSync.reload);
 }
 
 gulp.task('sass', sass);
-gulp.task('serve', gulp.series('sass', serve));
-gulp.task('default', gulp.series('sass', serve));
+gulp.task('html', html);
+gulp.task('serve', gulp.series('sass', 'html', serve));
+gulp.task('default', gulp.series('sass', 'html', serve));

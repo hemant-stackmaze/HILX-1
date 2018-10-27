@@ -1,5 +1,4 @@
 @charset 'utf-8';
-
 @import 'settings';
 @import 'foundation';
 @import 'motion-ui';
@@ -50,3 +49,11 @@
 
 @include motion-ui-transitions;
 @include motion-ui-animations;
+
+//custom style imports
+@import 'variables';
+@import 'global';
+@import 'header';
+@import 'home';
+@import 'best-sellers';
+@import 'collection-slider';

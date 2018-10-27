@@ -1,0 +1,28 @@
+//best sellers slider
+.best-sellers-slider {
+
+  .slick-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateX(-50%);
+
+    &.prev {
+      left: 0;
+    }
+
+    &.next {
+      right: 0;
+    }
+  }
+
+  .best-product {
+    opacity: .3;
+    transform: scale(.8);
+    transition: ease all .3s;
+
+    &.slick-current {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+}

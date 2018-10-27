@@ -1,0 +1,17 @@
+doctype html
+html(class="no-js" lang="en")
+  include head
+  body#home-page
+    include header
+
+    section.video-banner.flex-container.align-middle(style="background-image: url('../assets/images/banner.jpg')")
+      article.banner-content.text-center
+        .play-btn
+          img(src="../assets/icons/play.svg", alt="Play Video" width="100px")
+        h1.text OWN THE <br/> ADVENTURE
+
+    include best-sellers
+    include collection-slider
+
+    include footer
+    include scripts

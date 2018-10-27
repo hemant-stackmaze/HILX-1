@@ -1,0 +1,44 @@
+header
+  .header-inner.grid-container.flex-container.align-justify.align-middle
+    .logo
+      img(src="../assets/hilx_logo.svg", alt="HILX Logo" width="98px")
+    nav.flex-container.align-center-middle
+      .nav-item
+        a.flex-container.align-center-middle(href="#") Shop
+        .mega-product-menu
+          .featured.grid-x
+            .product-image.cell.large-5.flex-container.align-center-middle
+              img(src="../assets/images/product.jpg", alt="Product Image")
+            .product-info.cell.large-4.flex-container.flex-dir-column.align-center-middle.text-center
+              h3.title Ashley Black
+              .cat World of Wonder
+              h4.price $79.00
+            .buy-now.cell.large-3.flex-container.align-center-middle
+              button.button.primary Buy Now
+
+          - 
+            var cats = [
+              { name: 'Nomad', logo: 'nomad.svg' },
+              { name: 'Unfold', logo: 'unfold.svg' },
+              { name: 'World of Wonder', logo: 'wow.svg' },
+              { name: 'Zeus', logo: 'zeus.svg' },
+              { name: 'Nautical', logo: 'nautical.svg' },
+            ];
+
+          .all.flex-container
+            each cat in cats
+              .cat.flex-container.flex-dir-column.align-center-middle
+                .product-name
+                  img(src="../assets/product_logos/" + cat.logo alt="#{cat.name}")
+                .product-image
+                  img(src="../assets/images/product.jpg", alt="#{cat.name} + Image")
+                a.view-collection(href="#" title="View Collection") View collection
+
+      .nav-item
+        a(href="#") Technology
+      .nav-item
+        a(href="#") Lifestyle
+    .actions.flex-container 
+      a.login(href="#" title="Login") Login
+      .add-to-cart
+        i.fa.fa-shopping-cart
