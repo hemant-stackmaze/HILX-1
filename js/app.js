@@ -42,7 +42,7 @@ $(document).ready(function() {
   var collectionsBottom = collectionsTop + collectionHeight;
 
   $('.collection').height(winHeight);
-  console.log(collectionsTop);
+  //console.log(collectionsTop);
 
 
   $(window).scroll(function() {
@@ -50,11 +50,11 @@ $(document).ready(function() {
 
     if(winScrollTop >= collectionsTop) {
       $('.collections').addClass('isActive');
-      console.log(1);
+      //console.log(1);
     } else {
       $('.collections').removeClass('isActive');
-      console.log(collectionsTop);
-      console.log(winScrollTop);
+      //console.log(collectionsTop);
+      //console.log(winScrollTop);
     }
 
     $('.collection').each(function() {

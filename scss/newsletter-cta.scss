@@ -1,0 +1,53 @@
+//newsletter cta
+.newsletter-cta {
+
+  .image {
+    background: url('../assets/images/banner.jpg') center no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .content {
+    position: relative;
+    height: 481px;
+    padding: 0 50px;
+    color: #fff;
+    background-color: #000;
+
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      left: -100px;
+      top: 0;
+      width: 100px;
+      height: 100%;
+      background-color: #000;
+      transform-origin: top left;
+      transform: skewX(5deg);
+    }
+
+    .heading {
+      text-align: left;
+
+      .light-lower {
+        font-weight: 300;
+      }
+    }
+
+    @at-root #newsletter-form {
+      width: 100%;  
+      margin-top: 40px;
+
+      #newsletter-email {
+        height: 50px;
+      }
+
+      #newsletter-submit-btn {
+        width: 200px;
+        height: 50px;
+        border: 1px solid #fff;
+      }
+    }
+  }
+}
