@@ -11,6 +11,17 @@ p {
  font-weight: 300;
 }
 
+ul, ol {
+  li {
+    padding-left: 15px;
+  }
+}
+
+blockquote {
+  border-left: 5px solid #000;
+}
+
+
 .button {
   text-transform: uppercase;
 
@@ -35,6 +46,18 @@ textarea {
   box-shadow: none;
 }
 
+.page-banner {
+  height: 700px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  .page-title {
+    color: #fff;
+    text-transform: uppercase;
+  }
+}
+
 .page-section {
   padding: 150px 0;
 
@@ -50,4 +73,27 @@ textarea {
 .section-heading {
   margin: 0 auto 100px;
   text-align: center;
+}
+
+//page content
+.page-content {
+  margin: 100px 0;
+
+  .content-heading {
+    margin: 100px 0px 30px;
+  }
+
+  .grid-container {
+    max-width: 1047px;
+  }
+
+  .img-left {
+    float: left;
+    margin: 20px 20px 20px 0px;
+  }
+
+  .img-right {
+    float: right;
+    margin: 20px 0px 20px 20px;
+  }
 }

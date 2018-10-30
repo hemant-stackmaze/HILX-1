@@ -37,9 +37,12 @@ $(document).ready(function() {
 
   //collections slider
   var collections = $('.collections');
-  var collectionHeight = collections.height();
-  var collectionsTop = collections.offset().top;
-  var collectionsBottom = collectionsTop + collectionHeight;
+
+  if(collections.length) {
+    var collectionHeight = collections.height();
+    var collectionsTop = collections.offset().top;
+    var collectionsBottom = collectionsTop + collectionHeight;
+  }
 
   $('.collection').height(winHeight);
   //console.log(collectionsTop);

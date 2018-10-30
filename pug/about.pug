@@ -1,0 +1,112 @@
+doctype html
+html(class="no-js" lang="en")
+  include head
+  body#about
+    include header
+
+    section.page-banner.flex-container.align-center-middle(style="background-image: url('../assets/images/banner.jpg')")
+      h1.page-title About HILX
+
+    section.page-content
+      .grid-container 
+        h2.content-heading.text-center WHY WE DO IT
+        p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of 
+        
+        h1.content-heading.text-center HEADER 1 GOES HERE
+        p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of 
+        
+        h2.content-heading.text-center HEADER 2 GOES HERE
+        p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. <img class="img-right" src="../assets/images/banner.jpg" width="400px"> It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of
+        
+        h3.content-heading.text-center HEADER 3 GOES HERE
+        p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. <img class="img-left" src="../assets/images/banner.jpg" width="400px"> It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of
+        
+        h4.content-heading.text-center HEADER 4 GOES HERE
+        p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of 
+
+        .grid-x
+          .cell.large-6.content-heading
+            h5 HEADER 5 GOES HERE
+            blockquote Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer 
+
+          .cell.large-6.content-heading
+            h6 HEADER 6 GOES HERE
+            .grid-x
+              .cell.large-6.medium-6
+                ol
+                  each item in [1,2,3,4,5]
+                    li This is order list item #{item}
+              .cell.large-6.medium-6
+                ul
+                  each item in [1,2,3,4,5]
+                    li This is unorder list item #{item}
+
+    section.where-will-adv-collage
+      img(src="../assets/images/where_will_adv.jpg" alt="Where will your adventure take you collage")
+      h3 Where Will Your Adventure Take You
+
+    - 
+      var features = [
+        { title: 'Performance', icon: 'performance.svg', iconWidth: '90px'},
+        { title: 'Endurance', icon: 'endurance.svg', iconWidth: '120px'},
+        { title: 'Adventure', icon: 'adventure.svg', iconWidth: '90  px'},
+        { title: 'Wanderlust', icon: 'wanderlust.svg', iconWidth: '60px'},
+      ]
+
+    section.brand-intro.page-section
+      .grid-container
+        h2.section-heading BRAND INTRODUCTION
+        p.section.brand-info Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with
+        .features.grid-x
+          each feature in features
+            .feature.cell.large-3.medium-6.flex-container.flex-dir-column.align-center-middle
+              .icon.flex-container.align-center-middle
+                img(src="../assets/icons/" + feature.icon alt= feature.title width= feature.iconWidth)
+              h4.title= feature.title
+
+    section.self-healing.featured-cta
+      .featured-cta-inner
+        .overlay(style="background-image: url('../assets/images/brand_overlay_half.svg')")
+        .content.grid-x
+          .image.cell.medium-6
+            img(src="../assets/images/about_us_selfhealinglenses.png" alt="Brand overlay")
+          .info.cell.medium-6.flex-container.align-middle
+            div
+              h2 SELF HEALING LENSES
+              p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+              button.button.secondary Learn more
+
+    section.hinge.flex-container.align-center-middle.page-section  
+      div.flex-container.flex-dir-column.align-center-middle
+        h2.title 360 HINGE
+        button.button.secondary Learn More
+        img.image(src="../assets/images/about_us_360hinge.png" alt="360 Hinges" width="670px")
+
+
+    section.unfold.featured-cta
+      .featured-cta-inner
+        .overlay(style="background-image: url('../assets/images/brand_overlay_half.svg')")
+        .content.grid-x
+          .image.cell.medium-6
+            img(src="../assets/images/about_us_selfhealinglenses.png" alt="Brand overlay")
+          .info.cell.medium-6.flex-container.align-middle
+            div
+              h2 UNFOLD
+              p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+              button.button.secondary Learn more
+
+    section.switch-blade.flex-container.align-center-middle
+      .title SWITCH BLADE HINGE TECHNOLOGY 
+
+    section.warranty.flex-container.align-center-middle.page-section
+      .content.text-center
+        h2.title HILX LIFETIME WARRANTY
+        p.description Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
+        a(href="#") view warranty
+        button.button.secondary.shop-now Shop Now
+
+    include best-sellers
+
+
+    include footer
+    include scripts

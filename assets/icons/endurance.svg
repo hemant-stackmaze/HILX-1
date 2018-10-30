@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 121.626 55.723">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #fff;
+        stroke-width: 3px;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="Endurance" class="cls-1" d="M220.315,1496.711,206,1511.012a26.367,26.367,0,1,1,0-37.3l14.314,14.3,14.308-14.3a26.369,26.369,0,1,1,0,37.3Zm4.989-4.35,13.978,13.972a19.766,19.766,0,1,0,0-27.944Zm-9.978,0-13.985-13.972a19.764,19.764,0,1,0,0,27.944Z" transform="translate(-159.5 -1464.5)"/>
+</svg>
