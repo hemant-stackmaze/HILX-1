@@ -24,6 +24,11 @@ p {
   }
 }
 
+input[type="text"] {
+  height: 50px;
+  padding-left: 15px;
+}
+
 input[type="text"],
 textarea {
   border: none;

@@ -1,0 +1,91 @@
+footer {
+  padding: 100px;
+  color: #fff;
+  background-color: #000;
+
+  a {
+    color: #fff;
+
+    &:hover, &:visited {
+      opacity: .8;
+      color: #fff;
+    }
+  }
+
+  .instagram {
+    .heading {
+      font-weight: 300;
+
+      strong {
+        font-weight: normal;
+      }
+    }
+
+    .insta-plugin {
+      margin: 20px 0px;
+    }
+
+    .insta-footer {
+      font-weight: 300;
+    }
+  }
+
+  .actions {
+
+    #footer-search,
+    #footer-newsletter-form {
+      h4 {
+        margin-bottom: 10px;
+        font-weight: 300;
+
+        strong {
+          font-weight: 500;
+        }
+      }
+    }
+
+    #footer-search {
+      margin-bottom: 40px;
+    }
+
+    #footer-signup-btn {
+      width: 150px;
+      height: 50px;
+      border: 1px solid #fff;
+
+      &:hover {
+        color: #000;
+        background-color: #fff;
+      }
+    }
+  }
+
+  .nav {
+    .logo {
+      margin-bottom: 20px;
+    }
+
+    a {
+      display: block;
+      padding: 8px 0;
+    }
+  }
+
+  .footer-bottom {
+    margin-top: 30px;
+    padding-top: 30px;
+    border-top: 1px solid #222;
+
+    .icon {
+      margin-right: 20px;
+      i {
+        font-size: 1.8em;
+      }
+    }
+
+    .copyright {
+      opacity: .5;
+      font-weight: 300;
+    }
+  }
+}

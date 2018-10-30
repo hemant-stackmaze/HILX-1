@@ -1,0 +1,49 @@
+footer
+  .grid-container
+    .footer-top.grid-x
+      .instagram.cell.large-4
+        h4.heading
+          a(href="#")
+            i.fab.fa-instagram &nbsp;
+          span Follow HILX on 
+          a(href="#")
+            strong Instagram
+        .insta-plugin
+          img(src="../assets/images/insta.png", alt="Instagram Image collage")
+        h6.insta-footer
+          span Share your 
+          a(href="#") #travelwithhilx 
+          span to win free sunglasses &nbsp;
+          a(href="#")
+            img(src="../assets/icons/arrow.svg" alt="Open instagram" width="30px")
+
+      .actions.cell.large-6.flex-container.align-center-middle
+        div
+          form#footer-search
+            h4 Search
+            input#footer-search-text(type="text" placeholder="Search")
+          form#footer-newsletter-form
+            h4 
+              strong FREE SHIPPING 
+              span with Newsletter Sign up
+            .flex-container
+              input#footer-newsletter-email(type="text" placeholder="johndoe@email.com")
+              button#footer-signup-btn.button.primary Sign Up
+
+      .nav.cell.large-2.flex-container.align-right
+        .nav-inner.flex-container.flex-dir-column.text-right
+          .logo
+            img(src="../assets/hilx_logo.svg" alt="HILX Logo" width="100px")
+          nav
+            each link in ['PRODUCTS', 'ABOUT', 'PRIVACY POLICY', 'SHIPPING POLICY', 'LIFETIME WARRENTY', 'RETURN POLICY', 'CONTACT US']
+              .nav-item
+                a(href="#" title="link")= link
+
+    .footer-bottom.flex-container.align-justify
+      .icons.flex-container
+        a(href="#").icon
+          i.fab.fa-facebook-f
+        a(href="#").icon
+          i.fab.fa-instagram
+      .copyright Copyright HILX 2018
+       

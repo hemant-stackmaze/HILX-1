@@ -27,3 +27,35 @@
     }
   }
 }
+
+//hilx stories cta
+.hilx-stories-cta {
+  margin-top: 250px;
+
+  .content {
+    position: relative;
+    height: 700px;
+    padding-left: 15%;
+    background: url('../assets/images/banner.jpg') center no-repeat;
+    background-size: cover;
+    color: #fff;
+
+    &:before {
+      @extend #black-overlay-full;
+    }
+
+    .content-inner {
+      z-index: 2;
+      max-width: 500px;
+
+      .title {
+        margin-bottom: 0;
+        font-size: 2em;
+      }
+
+      .description {
+        margin: 30px 0;
+      }
+    }
+  }
+}
