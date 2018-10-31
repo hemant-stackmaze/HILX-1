@@ -1,0 +1,19 @@
+.fw-image-cta  {
+  height: 700px;
+  background: url('../assets/images/fw.jpg') center no-repeat;
+  background-size: cover;
+
+  .fw-image-cta-inner {
+    height: 100%;
+  }
+}
+
+.pagination-wrapper {
+  width: 100%;
+
+  .pagination a, .pagination button {
+    padding: 6px 14px;
+    color: #000;
+    background-color: #fff;
+  }
+}

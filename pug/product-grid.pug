@@ -1,0 +1,56 @@
+- 
+  var cats = [
+    { name: 'Nomad', logo: 'nomad_white.svg', width: '100px' },
+    { name: 'Unfold', logo: 'unfold_white.svg', width: '100px' },
+    { name: 'World of Wonder', logo: 'wow_white.svg', width: '220px' },
+    { name: 'Zeus', logo: 'zeus_white.svg', width: '100px' },
+    { name: 'Nautical', logo: 'nautical_white.svg', width: '100px' },
+  ];
+
+section.product-grid-outer
+  .grid-container
+    
+    section.product-filters-wrapper.flex-container.align-justify
+      article.product-filters.flex-container
+        each cat in cats
+          a.product-filter.flex-container.align-center-middle(href="#" style="width:" + cat.width)
+            img(src="../assets/product_logos/" + cat.logo alt="Filter" + cat.name)
+      article.product-sort
+        button.button.secondary Sort
+
+
+    section.product-grid.grid-x.grid-margin-x
+      each product in [1,2,3,4,5,6]
+        .product.cell.large-4.medium-6
+          .image
+            img(src="../assets/images/product.jpg", alt="Product")
+          .info
+            h3.title Ashley Black
+            .info-bottom.flex-container.flex-container.align-justify
+              h5.cat WORLD OF WONDER
+              h6.price $79.00
+          .actions.grid-x.grid-margin-x
+            button.button.primary.cell.medium-6.buy-btn Buy
+            button.button.secondary.cell.medium-6.customize.btn Customize
+
+      .pagination-wrapper.flex-container.align-center
+        nav(aria-label="Pagination")
+          ul.pagination
+            <li class="pagination-previous disabled">Previous <span class="show-for-sr">page</span></li>
+            li.current
+              span.show-for-sr You're on page 
+              span 1
+            li
+              a(href="#" aria-label="Page 2") 2
+            li
+              a(href="#" aria-label="Page 3") 3
+            li.ellipsis(aria-hidden="true")
+            li
+              a(href="#" aria-label="Page 10") 10
+            li
+              a(href="#" aria-label="Page 11") 11
+            li.pagination-next
+              a(href="#" aria-label="Next page") Next 
+                span.show-for-sr page
+
+

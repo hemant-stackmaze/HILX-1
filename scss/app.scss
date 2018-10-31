@@ -2,6 +2,7 @@
 @import 'settings';
 @import 'foundation';
 @import 'motion-ui';
+@import 'variables';
 
 @include foundation-global-styles;
 // @include foundation-grid;
@@ -51,7 +52,6 @@
 @include motion-ui-animations;
 
 //custom style imports
-@import 'variables';
 @import 'global';
 @import 'header';
 @import 'home';
@@ -61,6 +61,7 @@
 @import 'where-will-adventure';
 @import 'about';
 @import 'lookbook';
-
+@import 'products';
+@import 'product-grid';
 
 @import 'footer';
