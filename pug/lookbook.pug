@@ -1,0 +1,74 @@
+doctype html
+html(class="no-js" lang="en")
+  include head
+  body#home-page
+    include header
+
+    section.video-cta-banner.flex-container.align-center-middle
+      .content.grid-container
+        .grid-x
+          .play-btn-wrapper.cell.medium-6.flex-container.align-center-middle
+            img#banner-video-play-btn(src="../assets/icons/play.svg", alt="Play video" width="60px")
+          .content.cell.medium-6
+            h1.title LOOK BOOK  
+            p.description Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and"
+
+    - 
+      var cats = [
+        { name: 'Nomad', logo: 'nomad.svg', width: '100px' },
+        { name: 'Unfold', logo: 'unfold.svg', width: '100px' },
+        { name: 'World of Wonder', logo: 'wow.svg', width: '220px' },
+        { name: 'Zeus', logo: 'zeus.svg', width: '100px' },
+        { name: 'Nautical', logo: 'nautical.svg', width: '100px' },
+      ];
+
+    section.page-nav.flex-container.align-center-middle
+      .grid-container
+        nav.flex-container
+          each cat in cats
+            a.nav-item(href="#" style="width:" + cat.width)
+              img.product-logo(src="../assets/product_logos/" + cat.logo  alt= cat.name)
+
+    section.unfold.flex-container.align-center-middle
+      img(src="../assets/product_logos/unfold_white.svg", alt="Unfold" width="300px")
+
+    section.high-impact.page-section.video-section
+      .grid-container
+        h2.title.section-heading HIGH IMPACT LENSES
+        .video-wrapper
+          img.play-video-btn(src="../assets/icons/play.svg" alt="Play video" width="60px")
+          video(x-webkit-airplay="allow" poster="../assets/images/technologylookbook_high_impact_lanses.jpg") Your browser does not support HTML5 video
+            source(src="../assets/videos/video.mp4" type="video/mp4")
+
+    section.page-section.video-section
+      .grid-container
+        .video-wrapper
+          img.play-video-btn(src="../assets/icons/play.svg" alt="Play video" width="60px")
+          video(x-webkit-airplay="allow" poster="../assets/images/technologylookbook_self_healing_lenses_tints_video.jpg") Your browser does not support HTML5 video
+            source(src="../assets/videos/video.mp4" type="video/mp4")
+
+    - 
+      var situations = [
+        { name: 'Mountain Climbing', image: 'story_2.jpg' },
+        { name: 'Snowboarding', image: 'story_2.jpg' },
+        { name: 'Surfing', image: 'story_2.jpg' },
+        { name: 'Hiking', image: 'story_2.jpg' }
+      ]
+
+    section.lookbook-hinges
+      h2.title.section-heading 360 HINGES
+      p.section-subheading.text-center Effective in situations like
+      .lookbook-situations.grid-x
+        each situation in situations
+          - var bg = "background-image: url('../assets/images/" + situation.image + "')"; 
+          .situation.cell.medium-6(style= bg)
+            .content.flex-container.align-bottom
+              .content-inner.flex-container.align-justify
+                h3.name= situation.name
+                button.button.secondary Shop Now
+
+    include warranty
+    include shop-now-cta
+
+    include footer
+    include scripts

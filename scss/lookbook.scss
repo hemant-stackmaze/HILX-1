@@ -1,0 +1,86 @@
+.video-cta-banner {
+  position: relative;
+  height: 700px;
+  color: #fff;
+  background: url('../assets/images/story_1.jpg') bottom no-repeat;
+  background-size: cover;
+
+  &:before {
+    opacity: .5;
+    position: absolute;
+    content: '';
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+  }
+
+  #banner-video-play-btn {
+    transition: ease all .2s;
+
+    &:hover {
+      opacity: .8;
+      cursor: pointer;
+    }
+  }
+
+  .content {
+    z-index: 2;
+  }
+}
+
+//page-nav
+.page-nav {
+  height: 60px;
+
+  .nav-item {
+    margin: 0 50px;
+    text-align: center;
+
+    .product-logo {
+      width: 100%;
+    }
+  }
+}
+
+//unfold
+.unfold {
+  height: 700px;
+  background: url('../assets/images/technologylookbook_unfold.jpg') center no-repeat;
+  background-size: cover;
+}
+
+.lookbook-hinges {
+
+  .section-heading {
+    margin-bottom: 0;
+  }
+
+  .section-subheading {
+    margin-bottom: 50px;
+  }
+
+  @at-root .lookbook-situations {
+    .situation {
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+
+      .content {        
+        height: 600px;
+        color: #fff;
+
+        .content-inner {
+          width: 100%;
+          padding: 30px;
+        }
+
+        .name {
+
+        }
+      }
+    }
+  }
+}

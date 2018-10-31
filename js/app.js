@@ -86,4 +86,21 @@ $(document).ready(function() {
     }
   });
 
+  //video-section video play
+  $('.video-section .play-video-btn').click(function() {
+    console.log('Playing video...');
+    $(this).siblings('video').get(0).play();
+  });
+
+  var video = $("video");
+
+  video.on('play', function () {
+    $('.play-video-btn').hide();
+  });
+
+  video.on('pause', function () {
+    $('.play-video-btn').show();
+  });
+
+
 });

@@ -97,3 +97,70 @@ textarea {
     margin: 20px 0px 20px 20px;
   }
 }
+
+//warranty cta
+.warranty {
+  height: 700px;
+  color: #fff;
+  background-color: #000;
+  background-image: url('../assets/images/warranty.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  .description {
+    max-width: 500px;
+  }
+
+  a {
+    display: block;
+    color: #fff;
+    text-decoration: underline;
+  }
+
+  .shop-now {
+    margin-top: 30px;
+  }
+}
+
+//shop now cta
+.shop-now-cta {
+  height: 700px;
+  background: url('../assets/images/shop.jpg') center no-repeat;
+  background-size: cover;
+
+  .content {
+    height: 100%;
+  }
+
+  .content-inner {
+    max-width: 500px;
+    padding-right: 50px;
+    color: #fff;
+  }
+}
+
+//video section
+.video-section {
+
+  &.high-impact {
+    color: #fff;
+    background-color: #000;
+  }
+
+  .video-wrapper {
+    position: relative;
+
+    video {
+      width: 100%;
+    }
+
+    .play-video-btn {
+      z-index: 1;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
