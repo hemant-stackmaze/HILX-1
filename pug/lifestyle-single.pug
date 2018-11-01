@@ -1,0 +1,65 @@
+doctype html
+html(class="no-js" lang="en")
+  include head
+  body#lifestyle-single
+    include header
+
+    section.user-cover
+
+    .grid-container
+      .user-info-block.grid-x
+        .user-image.cell.auto.shrink
+          img(src="../assets/images/user.jpg" width="250px" alt="User Profile Picture")
+        .user-info.cell.auto
+          h1.user-name-age 
+            span.user-name John Doe, &nbsp;
+            span.user-age 30
+          .user-map
+            img(src="../assets/images/flag.jpg", alt="Country map")
+
+      h2.lifestyle-heading.section-heading Lifestyle
+
+      .grid-x.grid-margin-x
+        .user-bio.cell.medium-8
+          p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to scrambled scrambled make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
+        .personal-heighlights.cell.medium-4
+          .personal-heighlights-inner
+            h3.title Personal Highlights
+            ul.timeline
+              each item in [1,2,3,4]
+                li.event.flex-container
+                  .year 2017
+                  .title Lorem Ipsum is simply dummy text 
+              
+
+    section.page-section.video-section
+      .video-wrapper
+        img.play-video-btn(src="../assets/icons/play.svg" alt="Play video" width="60px")
+        video(x-webkit-airplay="allow" poster="../assets/images/technologylookbook_self_healing_lenses_tints_video.jpg") Your browser does not support HTML5 video
+          source(src="../assets/videos/video.mp4" type="video/mp4")
+
+
+    h2.section-heading FOLLOW JOHN ON INSTAGRAM
+
+    section.insta-grid
+      .grid-container 
+        .grid-x.grid-margin-x
+          each image in [1,2,3,4,5,6]
+            .cell.image.medium-6
+
+    section.john-wears
+      .grid-container
+        h2.section-heading WHAT JOHN WEARS
+        .john-wears-grid.grid-x.grid-margin-x
+          each product in [1,2]
+            .product.cell.medium-6.flex-container.flex-dir-column.align-center
+              .image
+                img(src="../assets/images/product.jpg", alt="Product")
+              button.button.primary.buy-now-btn Buy Now
+
+
+
+
+
+    include footer
+    include scripts

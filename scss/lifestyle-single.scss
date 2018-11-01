@@ -1,0 +1,89 @@
+.user-cover {
+  height: 500px;
+  background: url('../assets/images/story.jpg') top no-repeat;
+  background-size: cover;
+}
+
+.user-info-block {
+
+  .user-image {
+    margin-top: -120px;
+
+    img {
+      overflow: hidden;
+      border-radius: 50%;
+      border: 2px solid #fff;
+    }
+  }
+
+  .user-info {
+    margin: 30px 0 0 30px;
+
+    .user-name-age {
+      font-size: 2em;
+
+      .user-age {
+        font-weight: 300;
+      }
+    }
+  }
+}
+
+.lifestyle-heading {
+  margin: 80px auto 50px auto;
+}
+
+.personal-heighlights {
+
+  .personal-heighlights-inner {
+    width: 100%;
+  }
+
+  >.title {
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e8e8e8;
+  }
+
+  .timeline {
+    margin: 0;
+    padding: 0;
+
+    .event {
+      padding: 0;
+      margin-bottom: 20px;
+
+      .year {
+        font-weight: 700;
+        margin-right: 20px;
+      }
+    }
+  }
+}
+
+.insta-grid {
+  .image {
+    height: 500px;
+    margin-bottom: 30px;
+    background: #eee;
+  }
+}
+
+.john-wears {
+  margin-bottom: 150px;
+
+  .section-heading {
+    margin: 100px auto 50px auto;
+  }
+
+  .product {
+    .image {
+      text-align: center;
+    }
+
+    .buy-now-btn {
+      display: block;
+      margin: auto;
+    }
+  }
+}
