@@ -1,0 +1,43 @@
+$stories-grid-height: 350px;
+
+.grid-block {
+  margin-bottom: 30px;
+}
+
+.page-content-wrapper {
+  .section-heading {
+    margin: 100px auto 50px auto;
+  }
+}
+
+.stories-grid {
+  .top-grid {
+    margin-bottom: 30px;
+  }
+
+  .story {
+    height: $stories-grid-height;
+    background-color: #e8e8e8;
+
+    .content {
+      height: 100%;
+      padding: 30px;
+    }
+
+    .content-inner {
+      width: 100%;
+    }
+
+    .image {
+      background-color: #ccc;
+    }
+
+    &.small {
+      height: $stories-grid-height/2;
+      
+      &.reverse {
+        flex-direction: row-reverse;
+      }
+    }
+  }
+}

@@ -1,17 +1,11 @@
 doctype html
 html(class="no-js" lang="en")
   include head
-  body#home-page
+  body#look-book
     include header
 
-    section.video-cta-banner.flex-container.align-center-middle
-      .content.grid-container
-        .grid-x
-          .play-btn-wrapper.cell.medium-6.flex-container.align-center-middle
-            img#banner-video-play-btn(src="../assets/icons/play.svg", alt="Play video" width="60px")
-          .content.cell.medium-6
-            h1.title LOOK BOOK  
-            p.description Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and"
+    - var videoCtaBannerTitle = "Look Book"
+    include video-cta-banner
 
     - 
       var cats = [

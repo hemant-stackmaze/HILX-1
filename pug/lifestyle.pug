@@ -1,0 +1,77 @@
+doctype html
+html(class="no-js" lang="en")
+  include head
+  body#lifestyle
+    include header
+
+    - var videoCtaBannerTitle = "Heading goes here"
+    include video-cta-banner
+
+    .page-content-wrapper.grid-container
+      h2.section-heading INTRO HEADING GOES HERE
+      p.section-subheading Sub text goes here lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+
+      .stories-grid
+
+        each block in [1, 2, 3]
+          .grid-block
+        
+            .top-grid.grid-x.grid-margin-x
+              //- top grid here -----------
+              .story.large.cell.medium-8
+                .content.flex-container.align-bottom
+                  .content-inner.flex-container.align-justify.align-middle
+                    .info
+                      h3.name John Doe
+                      .activity Sport
+                    .action
+                      img(src="../assets/icons/arrow.svg", alt="View story" width="20px")
+
+              .story.medium.cell.medium-4
+                .content.flex-container.align-bottom
+                  .content-inner.flex-container.align-justify.align-middle
+                    .info
+                      h3.name John Doe
+                      .activity Sport
+                    .action
+                      img(src="../assets/icons/arrow.svg", alt="View story" width="20px")
+              
+            .bottom-grid.grid-x.grid-margin-x
+              //- bottom grid here -----------
+              .small-stories-wrapper.cell.medium-8
+                .story.small.grid-x
+                  .image.cell.large-6
+                  .content.cell.large-6.flex-container.align-middle
+                    .content-inner.flex-container.align-justify.align-middle
+                      .info
+                        h3.name John Doe
+                        .activity Sport
+                      .action
+                        img(src="../assets/icons/arrow.svg", alt="View story" width="20px")
+                        
+                .story.small.reverse.grid-x
+                  .image.cell.large-6
+                  .content.cell.large-6.flex-container.align-middle
+                    .content-inner.flex-container.align-justify.align-middle
+                      .info
+                        h3.name John Doe
+                        .activity Sport
+                      .action
+                        img(src="../assets/icons/arrow.svg", alt="View story" width="20px")
+                    
+              .story.medium.cell.medium-4
+                .content.flex-container.align-bottom
+                  .content-inner.flex-container.align-justify.align-middle
+                    .info
+                      h3.name John Doe
+                      .activity Sport
+                    .action
+                      img(src="../assets/icons/arrow.svg", alt="View story" width="20px")
+
+    include best-sellers
+    include shop-now-cta
+                
+
+
+    include footer
+    include scripts
