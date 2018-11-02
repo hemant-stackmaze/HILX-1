@@ -1,0 +1,50 @@
+/* Medium and down */
+@media screen and (max-width: 63.9375em) {
+  .page-section {
+    padding: 15px 0;
+  }
+
+  footer {
+    padding: 30px 15px;
+
+    .actions, .nav {
+      justify-content: left;
+    }
+
+    .nav-inner {
+      text-align: left;
+    }
+  }
+}
+
+/* Small only */
+@media screen and (max-width: 39.9375em) {
+
+  // product single starts here
+  .warranty {
+    height: 400px;
+  }
+
+  .newsletter-cta {
+    .image {
+      height: 300px;
+    }
+
+    .content {
+      height: 300px;
+    }
+  }
+
+  .in-the-box {
+    img {
+      width: 100%;
+    }
+  }
+
+  .features {
+    .heading-black {
+      margin: 15px 0 20px;
+    }
+  }
+  // product single ends here ****
+}
