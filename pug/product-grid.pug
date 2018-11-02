@@ -10,17 +10,23 @@
 section.product-grid-outer
   .grid-container
     
-    section.product-filters-wrapper.flex-container.align-justify
-      article.product-filters.flex-container
-        each cat in cats
-          a.product-filter.flex-container.align-center-middle(href="#" style="width:" + cat.width)
-            img(src="../assets/product_logos/" + cat.logo alt="Filter" + cat.name)
-      article.product-sort
-        button.button.secondary Sort
+    if (showControls)
+      section.product-filters-wrapper.flex-container.align-justify
+        article.product-filters.flex-container
+          each cat in cats
+            a.product-filter.flex-container.align-center-middle(href="#" style="width:" + cat.width)
+              img(src="../assets/product_logos/" + cat.logo alt="Filter" + cat.name)
+        article.product-sort
+          button.button.secondary Sort
+
+    if (hasHeading)
+      h2.product-grid-heading.text-center OTHER PRODUCTS YOU MIGHT LIKE
 
 
     section.product-grid.grid-x.grid-margin-x
-      each product in [1,2,3,4,5,6]
+      - var i = 0;
+      while i < totalProducts
+        - i++;
         .product.cell.large-4.medium-6
           .image
             img(src="../assets/images/product.jpg", alt="Product")
@@ -32,25 +38,25 @@ section.product-grid-outer
           .actions.grid-x.grid-margin-x
             button.button.primary.cell.medium-6.buy-btn Buy
             button.button.secondary.cell.medium-6.customize.btn Customize
-
-      .pagination-wrapper.flex-container.align-center
-        nav(aria-label="Pagination")
-          ul.pagination
-            <li class="pagination-previous disabled">Previous <span class="show-for-sr">page</span></li>
-            li.current
-              span.show-for-sr You're on page 
-              span 1
-            li
-              a(href="#" aria-label="Page 2") 2
-            li
-              a(href="#" aria-label="Page 3") 3
-            li.ellipsis(aria-hidden="true")
-            li
-              a(href="#" aria-label="Page 10") 10
-            li
-              a(href="#" aria-label="Page 11") 11
-            li.pagination-next
-              a(href="#" aria-label="Next page") Next 
-                span.show-for-sr page
+      if (showControls)
+        .pagination-wrapper.flex-container.align-center
+          nav(aria-label="Pagination")
+            ul.pagination
+              <li class="pagination-previous disabled">Previous <span class="show-for-sr">page</span></li>
+              li.current
+                span.show-for-sr You're on page 
+                span 1
+              li
+                a(href="#" aria-label="Page 2") 2
+              li
+                a(href="#" aria-label="Page 3") 3
+              li.ellipsis(aria-hidden="true")
+              li
+                a(href="#" aria-label="Page 10") 10
+              li
+                a(href="#" aria-label="Page 11") 11
+              li.pagination-next
+                a(href="#" aria-label="Next page") Next 
+                  span.show-for-sr page
 
 

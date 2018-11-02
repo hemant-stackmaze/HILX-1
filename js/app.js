@@ -103,4 +103,18 @@ $(document).ready(function() {
   });
 
 
+  //product customizer
+  $('.options-toggle').on('click', function() {
+    var toggle = $(this);
+    var target = toggle.data('target');
+    var targetId = '#' + target; 
+
+    $('.options-toggle').removeClass('active');
+    toggle.addClass('active');
+
+    $('.customizer-option').removeClass('active');
+    $(targetId).addClass('active');
+  });
+
+
 });
