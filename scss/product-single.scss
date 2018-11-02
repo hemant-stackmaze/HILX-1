@@ -39,7 +39,7 @@
 
 //product customizer
 .product-customizer {
-  margin: 50px auto;
+  margin: 50px auto 20px;
   
   .customized-preview {
     position: relative;
@@ -135,4 +135,8 @@
       }
     }
   }
+}
+
+.image-compare {
+  margin-top: 30px;
 }

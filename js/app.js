@@ -117,4 +117,8 @@ $(document).ready(function() {
   });
 
 
+  //image compare
+  $('.image-compare .images').twentytwenty();
+
+
 });
