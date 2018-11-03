@@ -1,5 +1,22 @@
 /* Medium and down */
 @media screen and (max-width: 63.9375em) {
+
+  //header starts here 
+  header {
+    nav.flex-container, .actions {
+      display: none;
+    }
+  }
+  //header ends here ***
+
+  //product single starts here
+  .product-customizer 
+  .customized-preview 
+  .product-image {
+    height: 300px;
+  }
+  //product-single-ends here ***
+
   .page-section {
     padding: 15px 0;
   }
@@ -21,6 +38,16 @@
 @media screen and (max-width: 39.9375em) {
 
   // product single starts here
+  .product-action-bar {
+    .product-info-wrapper {
+      height: auto;
+    }
+
+    .action-item.button {
+      width: auto;
+    }
+  }
+
   .warranty {
     height: 400px;
   }
