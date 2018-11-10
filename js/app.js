@@ -4,6 +4,7 @@ $(document).ready(function() {
 
   var winHeight = $(window).height();
   var winWidth = $(window).width();
+  var dotNavClicked = false;
 
   
   //best seller slider
@@ -29,7 +30,7 @@ $(document).ready(function() {
         breakpoint: 480,
         settings: {
           arrows: false,
-          centerMode: true,
+          centerMode: false,
           centerPadding: '40px',
           slidesToShow: 1
         }
@@ -51,15 +52,13 @@ $(document).ready(function() {
 
 
   $(window).scroll(function() {
+
     var winScrollTop = $(this).scrollTop();
 
     if(winScrollTop >= collectionsTop) {
       $('.collections').addClass('isActive');
-      //console.log(1);
     } else {
       $('.collections').removeClass('isActive');
-      //console.log(collectionsTop);
-      //console.log(winScrollTop);
     }
 
     $('.collection').each(function() {
@@ -70,22 +69,38 @@ $(document).ready(function() {
         $('.collection').removeClass('isActive');
         collection.addClass('isActive');
 
-        $('.item').removeClass('isActive');
-        var navItem = $('.item[data-collection-nav-index="'+ collectionIndex +'"]');
+        // if (!dotNavClicked) {
+          $('.item').removeClass('isActive');
+          var navItem = $('.item[data-collection-nav-index="'+ collectionIndex +'"]');
 
-        if(!navItem.hasClass('isActive')) {
+          //if(!navItem.hasClass('isActive')) {
           navItem.addClass('isActive');
-        }
-        
+          //}
+        // }
       } 
     });
+    
 
     //check if collections is in viewport
-    if (winScrollTop >= collectionsTop && winScrollTop <= collectionsBottom) {
-      //console.log('Collection in view port');
-    } else {
-      //console.log('Collection outside view port');
-    }
+    // if (winScrollTop >= collectionsTop && winScrollTop <= collectionsBottom) {
+    //   console.log('Collection in view port');
+    //   $('.collections-navigation').hide()
+    // } else {
+    //   console.log('Collection outside view port');
+    //   $('.collections-navigation').show()
+    // }
+  });
+
+  //collection nav dots
+  $('[data-collection-nav-item]').on('click', function() {
+    dotNavClicked = true;
+    var collectionIndex = $(this).data('collection-nav-index');
+    console.log(collectionIndex);
+    var targetCollectionTop = $('[data-collection-index='+ collectionIndex +']').offset().top;
+    $('html, body').animate({scrollTop: targetCollectionTop}, 300, function() {
+      dotNavClicked = false;
+      console.log('scroll complete...');
+    });
   });
 
   //video-section video play
