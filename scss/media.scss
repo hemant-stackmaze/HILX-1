@@ -3,11 +3,102 @@
 
   //header starts here 
   header {
-    nav.flex-container, .actions {
+    nav.flex-container {
+      position: relative;
+      overflow: auto;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: auto;
+      background-color: #000;
+
+      .nav-item {
+        height: auto;
+
+        .mega-product-menu {
+          display: none;
+          opacity: 1;
+          position: relative;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: auto;
+
+          .featured {
+            opacity: 1;
+            padding: 30px;
+            height: auto;
+          }
+
+          .all {
+            opacity: 1;
+            flex-direction: column;
+            height: auto;
+
+            .cat {
+              width: 100%;
+              height: auto;
+              border: none;
+              padding: 30px;
+              border-bottom: 1px solid $light-gray;
+
+              .view-collection {
+                opacity: 1;
+                margin-bottom: 0;
+              }
+              .product-image {
+                margin-top: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .actions {
       display: none;
     }
   }
   //header ends here ***
+
+  //home page starts here 
+  .video-banner {
+    .banner-content {
+      margin: auto;
+    }
+  }
+
+  .where-will-your-adv  {
+    .cat-row-multiple,
+    .cat-row-single {
+      transform: scale(1);
+    }
+  
+    .cat-row-single {
+      transform: scale(1) translateY(0);
+    }
+  
+    .product {
+      transform: skewX(0deg);
+  
+      .product-content {
+        height: 400px;
+        transform: skewX(0deg) scale(1);
+      }
+  
+      .actions {
+        transform: translateY(0) scale(1);
+      }
+    }
+  }
+
+  .hilx-stories-cta {
+    margin-top: 0;
+  }
+  //home page ends here ***
 
   //product single starts here
   .product-customizer 
@@ -18,7 +109,7 @@
   //product-single-ends here ***
 
   .page-section {
-    padding: 15px 0;
+    padding: 50px 0;
   }
 
   footer {
@@ -37,6 +128,21 @@
 /* Small only */
 @media screen and (max-width: 39.9375em) {
 
+  //newsletter cta starts
+  .newsletter-cta {
+    padding: 0;
+
+    .image {
+      height: 200px;
+    }
+
+    .content {
+      height: 230px;
+      padding: 0 15px;
+    }
+  }
+  //newsletter cta ends***
+
   // product single starts here
   .product-action-bar {
     .product-info-wrapper {
@@ -50,16 +156,6 @@
 
   .warranty {
     height: 400px;
-  }
-
-  .newsletter-cta {
-    .image {
-      height: 300px;
-    }
-
-    .content {
-      height: 300px;
-    }
   }
 
   .in-the-box {
