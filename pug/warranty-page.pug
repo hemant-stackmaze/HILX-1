@@ -1,0 +1,36 @@
+doctype html
+html(class="no-js" lang="en")
+  include head
+  body#home-page
+    include header
+
+    section.page-banner.flex-container.align-center-middle(style="background-image: url('../assets/images/hilx_lifetime warranty.jpg')")
+      h1.page-title HILX LIFETIME WARRANTY
+      
+    section.page-content
+      .grid-container
+        h3.content-heading Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+        p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when
+    
+      .warranty-grid.grid-container
+        h3.warranty-grid-heading.text-center WARRANTY COVERAGE
+        .warranty-grid-items.grid-x.grid-margin-x
+          .warranty-grid-item.cell.medium-4.flex-container.flex-dir-column.align-center-middle
+            img.warranty-grid-item-icon(src="../assets/icons/repair.svg" alt="repair" width="100px")
+            h3.warranty-grid-item-heading.text-center Repair
+            p.warranty-grid-item-descripction "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+
+          .warranty-grid-item.cell.medium-4.flex-container.flex-dir-column.align-center-middle
+            img.warranty-grid-item-icon(src="../assets/icons/replacement.svg" alt="repair" width="100px")
+            h3.warranty-grid-item-heading.text-center Replacement
+            p.warranty-grid-item-descripction "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+
+          .warranty-grid-item.cell.medium-4.flex-container.flex-dir-column.align-center-middle
+            img.warranty-grid-item-icon(src="../assets/icons/lost.svg" alt="lost" width="70px")
+            h3.warranty-grid-item-heading.text-center Lost
+            p.warranty-grid-item-descripction "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+  
+      
+    include shop-now-cta
+    include footer
+    include scripts

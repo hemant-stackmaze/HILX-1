@@ -1,0 +1,43 @@
+#contact-page{
+  background-color: #F4F4F5;
+}
+.contact-form-fields{
+  input{
+    border: none;
+    border-bottom: 1px solid black;
+  }
+}
+.contact-form{
+  background-color: white;
+  box-shadow:2px 0px 10px rgba(0,0,0,0.1);
+  padding: 70px;
+  margin: 50px;
+  margin-top:-360px;
+}
+.contact-send-button{
+  width:280px;
+  margin-top: 45px;
+}
+.contact-faq{
+  margin-top:140px;
+}
+.contact-faq-accordion{
+  margin-top: 70px;
+}
+.contact-faq-accordion{
+  a{
+    font-weight: regular;
+    font-size: 1.3em;
+  }
+  ul{
+    border: none;
+    border-bottom: 1px solid #D2D2D2;
+    background: none;
+  }
+  li{
+    padding: 0px;
+  }
+  .accordion-content{
+    background: none;
+  }
+}

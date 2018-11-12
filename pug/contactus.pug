@@ -1,0 +1,54 @@
+doctype html
+html(class="no-js" lang="en")
+  include head
+  body#contact-page
+    include header
+
+    section.page-banner.flex-container.align-center-middle(style="background-image: url('../assets/images/contactus.jpg')")
+      h1.page-title CONTACT US
+      
+    section.page-content
+      .grid-container
+        form.contact-form
+          .contact-form-fields
+            input.contact-form-name.cell.medium-6(type="text" placeholder="Name")
+            input.contact-form-email.cell.medium-6(type="text" placeholder="E-mail")        
+            input.contact-form-mobile-number.cell.medium-6(type="text" placeholder="Mobile Number")      
+            input.contact-form-how-can-we-help.cell.medium-6(type="text" placeholder="How Can We Help")
+            input.contact-form-message.cell.medium-6(type="text"  placeholder="Message")
+            .contact-form-button.flex-container.flex-dir-column.align-middle
+              button.button.contact-send-button Send
+
+      .contact-faq.grid-container
+        h3.contact-faq-heading.text-center FREQUENTLY ASKED QUESTIONS
+        .contact-faq-accordion
+          ul.accordion(data-accordion data-allow-all-closed="true")
+            li.accordion-item(data-accordion-item)
+              a.accordion-title.is-active(href="#") Question goes here lorem Ipsum is simply dummy ?
+              .accordion-content(data-tab-content)
+                p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, 
+          ul.accordion(data-accordion data-allow-all-closed="true")
+            li.accordion-item(data-accordion-item)
+              a.accordion-title.is-active(href="#") Question goes here lorem Ipsum is simply dummy ?
+              .accordion-content(data-tab-content)
+                p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, 
+          ul.accordion(data-accordion data-allow-all-closed="true")
+            li.accordion-item(data-accordion-item)
+              a.accordion-title.is-active(href="#") Question goes here lorem Ipsum is simply dummy ?
+              .accordion-content(data-tab-content)
+                p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, 
+          ul.accordion(data-accordion data-allow-all-closed="true")
+            li.accordion-item(data-accordion-item)
+              a.accordion-title.is-active(href="#") Question goes here lorem Ipsum is simply dummy ?
+              .accordion-content(data-tab-content)
+                p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, 
+          ul.accordion(data-accordion data-allow-all-closed="true")
+            li.accordion-item(data-accordion-item)
+              a.accordion-title.is-active(href="#") Question goes here lorem Ipsum is simply dummy ?
+              .accordion-content(data-tab-content)
+                p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, 
+                
+
+
+    include footer
+    include scripts
