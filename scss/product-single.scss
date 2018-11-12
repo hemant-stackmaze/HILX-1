@@ -9,7 +9,7 @@
     position: relative;
     display: inline-block;
     margin-bottom: 0;
-    font-size: 1.3em;
+    font-size: 1.5em;
 
     &:before {
       position: absolute;
@@ -18,13 +18,17 @@
       width: 100%;
       height: 1px;
       background-color: #000;
-      bottom: -33px;
+      bottom: -25px;
       left: 0;
     }
   }
 
   .action-item {
     margin-right: 10px;
+
+    &:last-child {
+      margin-right: 0;
+    }
 
     &.price {
       margin: 0 10px 0 0;
@@ -33,13 +37,14 @@
 
     &.button {
       width: 400px;
+      height: 50px;
     }
   }
 }
 
 //product customizer
 .product-customizer {
-  margin: 50px auto 20px;
+  margin: 30px auto 20px;
   
   .customized-preview {
     position: relative;
@@ -96,17 +101,39 @@
 
       .item {
         height: 100px;
-        margin-bottom: 30px;
+        margin-top: 30px;
         background-color: #e8e8e8;
+
+        &:first-child, &:nth-child(2) {
+          margin-top: 0;
+        }
       }
     }
   }
 }
 
+//lense info grid
+.lense-info.grid-container {
+  margin-top: 20px;
+
+  .title {
+    font-size: 1.3em;
+  }
+}
+
 //features
 .features {
+  
+  &.page-section {
+    padding: 50px 0;
+  }
+
   .feature {
-    margin-bottom: 50px;
+    margin-top: 50px;
+
+    &:first-child, &:nth-child(2) {
+      margin-top: 0;
+    }
 
     .name {
       margin-bottom: 15px;
@@ -124,7 +151,7 @@
 
 .in-the-box {
   .heading-black {
-    margin-bottom: 20px;
+    margin-bottom: 80px;
   }
 
   .grid {
