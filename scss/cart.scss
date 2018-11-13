@@ -54,6 +54,9 @@
   margin-top:30px;
   input{
     height: 36px;
+    &:focus{
+      border:none;
+    }
   }
   .button{
     border:1px solid white;
