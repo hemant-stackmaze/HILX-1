@@ -14,6 +14,11 @@
    padding-left: none;
   }
 
+  
+  input[type="text"]  {
+    margin-top: 45px;
+  }
+
   input[type="number"] {
    border: none;
    border-bottom: 1px solid black;
@@ -86,7 +91,6 @@ h2.head-line {
 }
 
 input[type="text"] {
- margin-top: 45px;
   border: none;
   border-bottom: 1px solid black;
   padding-left: 0;
