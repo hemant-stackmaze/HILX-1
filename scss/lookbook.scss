@@ -35,6 +35,16 @@
 .page-nav {
   height: 60px;
 
+  .page-nav-track {
+    width: 100%;
+    overflow-x: auto;
+  }
+
+  nav {
+    width: 1000px;
+    height: 65px;
+  }
+
   .nav-item {
     margin: 0 50px;
     text-align: center;

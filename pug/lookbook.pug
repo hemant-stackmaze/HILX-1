@@ -16,12 +16,13 @@ html(class="no-js" lang="en")
         { name: 'Nautical', logo: 'nautical.svg', width: '100px' },
       ];
 
-    section.page-nav.flex-container.align-center-middle
+    section.page-nav
       .grid-container
-        nav.flex-container
-          each cat in cats
-            a.nav-item(href="#" style="width:" + cat.width)
-              img.product-logo(src="../assets/product_logos/" + cat.logo  alt= cat.name)
+        .page-nav-track
+          nav.flex-container.align-center-middle
+            each cat in cats
+              a.nav-item(href="#" style="width:" + cat.width)
+                img.product-logo(src="../assets/product_logos/" + cat.logo  alt= cat.name)
 
     section.unfold.flex-container.align-center-middle
       img(src="../assets/product_logos/unfold_white.svg", alt="Unfold" width="300px")

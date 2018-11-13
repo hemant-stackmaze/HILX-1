@@ -1,6 +1,13 @@
 /* Medium and down */
 @media screen and (max-width: 63.9375em) {
 
+  //global starts
+  .section-heading {
+    margin-bottom: 30px;
+  }
+  //global ends***
+
+
   //header starts here 
   header {
     nav.flex-container {
@@ -136,7 +143,21 @@
   .unfold {
     height: auto;
   }
+
+  #look-book .unfold {
+    height: 450px;
+  }
   //about page ends here ***
+
+  //technology lookbook starts here
+  .lookbook-situations {
+    .situation {
+      .content {
+        height: 450px;
+      }
+    }
+  }
+  //technology lookbook ends here
 
   //product single starts here
   .product-customizer 
@@ -201,6 +222,29 @@
     text-align: center;
   }
   //about page ends here ***
+
+  //technology lookbook starts here
+  .video-cta-banner {
+    height: 450px;
+
+    .content {
+      margin-top: 20px;
+
+      .title {
+        text-align: center;
+      }
+    }
+  }
+
+  .shop-now-cta {
+    height: 450px;
+
+    .content-inner {
+      padding: 20px;
+      text-align: center;
+    }
+  }
+  //technology lookbook ends here***
 
   // product single starts here
   .product-action-bar {
