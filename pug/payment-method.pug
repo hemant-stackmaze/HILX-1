@@ -1,0 +1,55 @@
+doctype html
+html(class="no-js" lang="en")
+  include head
+  body#home-page
+    include header
+
+    section.page-content
+      .grid-container.main-Credit-Card-box
+        h1.content-heading Credit Card
+        .grid-x.grid-margin-x
+              .cell.large-8
+                  form.Credit-Card-form
+                      h2.head-line.sub-title Contact Information
+                      input#card-no.form-componen(type="text" placeholder="card Number") 
+                      input#Cardhldrr-Name.form-componen(type="text" placeholder="Cardholder Name") 
+                      .mm-yy.flex-container
+                        input#mm-yy.mm-yy(type="date" placeholder="MM/YY")
+                        input#cvv.cvv-country(type="text" placeholder="CVV")
+                        i.far.fa-question-circle.icon
+                      h2.head-line.sub-title Billing Address
+                      .shippin-address.flex-container.flex-dir-column
+                        .shipping-add.flex-container.flex-dir-row
+                          input#radio-btn.radio-button(type="radio" name="cost" value="addresss")
+                          labal#shhipiing-address.radio-btn-right-text Use same as shipping address
+                      h2.add 4627 Strother Street,  <br/>Tuscaloosa, Alabama. 35404 <br/> Mobile Number - 205-633-0558 
+                      .billing-address.flex-container.flex-dir-column
+                        .bill-add.flex-container.flex-dir-row
+                          input#radio-btn.radio-button(type="radio" name="cost" value="addresss")
+                          labal#billing-address.radio-btn-right-text Use different billing address
+                      input#Street.Street(type="text" placeholder="Street") 
+                      input#City.City(type="text" placeholder="City")
+                      zip-country.flex-container 
+                        input#Zip-code.Zipcode(type="text" placeholder="Zipcode")
+                        input#Country.cvv-country(type="text" placeholder="Country")
+                      input#Mo-no.MO-NO(type="number" placeholder="Mobile Number") 
+                      button.button.primary PURCHASE
+              .cell.large-4
+                .cell.large-4.detail-payment
+                  .order-total.flex-container.flex-dir-row
+                      h4.order-total Order Total
+                  .left-col.flex-container.flex-dir-row.align-justify
+                      span Subtotal
+                      div $316.00
+                  .left-col.flex-container.flex-dir-row.align-justify
+                      span Shipping
+                      div -
+                  .left-col.flex-container.flex-dir-row.align-justify
+                      span Coupen discount
+                      div - $10.00
+                  .left-col.flex-container.flex-dir-row.align-justify
+                      span Total
+                      div $306.00
+
+    include footer
+    include scripts
