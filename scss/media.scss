@@ -133,18 +133,8 @@
     }
   }
 
-  .featured-cta {
-    .featured-cta-inner {
-      height: auto;
-      padding: 0 0 40px;
-    }
-
-    .content {
-      .info {
-        padding: 0 10px;
-        text-align: center;
-      }
-    }
+  .unfold {
+    height: auto;
   }
   //about page ends here ***
 
@@ -190,6 +180,27 @@
     }
   }
   //newsletter cta ends***
+
+  //about page starts here
+  .featured-cta {
+    .featured-cta-inner {
+      height: auto;
+      padding: 0 0 40px;
+    }
+
+    .content {
+      .info {
+        padding: 0 10px;
+        text-align: center;
+      }
+    }
+  }
+
+  .switch-blade {
+    height: 450px;
+    text-align: center;
+  }
+  //about page ends here ***
 
   // product single starts here
   .product-action-bar {
