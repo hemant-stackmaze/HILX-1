@@ -1,0 +1,95 @@
+doctype html
+html(class="no-js" lang="en")
+  include head
+  body#home-page
+    include header
+
+    section.cart
+      .grid-container
+        h3.page-title Your Cart (4)
+        .cart.grid-x.grid-margin-x
+          .cart-product-details.cell.medium-8.flex-container.flex-dir-column.align-justify
+            .cart-product.grid-x.grid-margin-x
+              .cart-product-img-name.flex-container.flex-dir-row.align-justify
+                .cell.medium-6.flex-container.flex-dir-row
+                  img.cart-product-img(src="../assets/images/product.jpg")
+                  .cart-product-name.flex-container.flex-dir-row.align-center-middle
+                    span Ashley Black
+                .cart-price-quantity-remove.cell.medium-6.flex-container.flex-dir-row
+                  span.cart-product-price $79.00
+                  .cart-price-quantity.flex-container.flex-dir-row
+                    .cart-price-quantity-number.flex-container.flex-dir-column.align-center-middle
+                      span 1
+                    .cart-price-quantity-increase-decrease.flex-container.flex-dir-column
+                      i.fa.fa-plus
+                      i.fa.fa-minus
+                  img.cart-product-remove(src="../assets/icons/close.svg")
+            
+            .cart-product.grid-x.grid-margin-x
+              .cart-product-img-name.flex-container.flex-dir-row.align-justify
+                .cell.medium-6.flex-container.flex-dir-row
+                  img.cart-product-img(src="../assets/images/product.jpg")
+                  .cart-product-name.flex-container.flex-dir-row.align-center-middle
+                    span Ashley Black
+                .cart-price-quantity-remove.cell.medium-6.flex-container.flex-dir-row
+                  span.cart-product-price $79.00
+                  .cart-price-quantity.flex-container.flex-dir-row
+                    .cart-price-quantity-number.flex-container.flex-dir-column.align-center-middle
+                      span 1
+                    .cart-price-quantity-increase-decrease.flex-container.flex-dir-column
+                      i.fa.fa-plus
+                      i.fa.fa-minus
+                  img.cart-product-remove(src="../assets/icons/close.svg")
+            
+            .cart-product.grid-x.grid-margin-x
+              .cart-product-img-name.flex-container.flex-dir-row.align-justify
+                .cell.medium-6.flex-container.flex-dir-row
+                  img.cart-product-img(src="../assets/images/product.jpg")
+                  .cart-product-name.flex-container.flex-dir-row.align-center-middle
+                    span Ashley Black
+                .cart-price-quantity-remove.cell.medium-6.flex-container.flex-dir-row
+                  span.cart-product-price $79.00
+                  .cart-price-quantity.flex-container.flex-dir-row
+                    .cart-price-quantity-number.flex-container.flex-dir-column.align-center-middle
+                      span 1
+                    .cart-price-quantity-increase-decrease.flex-container.flex-dir-column
+                      i.fa.fa-plus
+                      i.fa.fa-minus
+                  img.cart-product-remove(src="../assets/icons/close.svg")
+            
+            .cart-product.grid-x.grid-margin-x
+              .cart-product-img-name.flex-container.flex-dir-row.align-justify
+                .cell.medium-6.flex-container.flex-dir-row
+                  img.cart-product-img(src="../assets/images/product.jpg")
+                  .cart-product-name.flex-container.flex-dir-row.align-center-middle
+                    span Ashley Black
+                .cart-price-quantity-remove.cell.medium-6.flex-container.flex-dir-row
+                  span.cart-product-price $79.00
+                  .cart-price-quantity.flex-container.flex-dir-row
+                    .cart-price-quantity-number.flex-container.flex-dir-column.align-center-middle
+                      span 1
+                    .cart-price-quantity-increase-decrease.flex-container.flex-dir-column
+                      i.fa.fa-plus
+                      i.fa.fa-minus
+                  img.cart-product-remove(src="../assets/icons/close.svg")
+         
+
+          .cart-product-payment-details
+            .detail-payment.cell.medium-4.flex-container.flex-dir-column
+              h4.order-total Order Total
+              .left-col.flex-container.flex-dir-row.align-justify
+                span Total
+                div $316.00
+              .left-col.flex-container.flex-dir-row.align-justify
+                span Subtotal
+                div $316.00
+              .cart-coupen.flex-container.flex-dir-row
+                input.cart-enter-coupen(type="text" placeholder="Enter Coupon Code")
+                button.cart-coupen-apply-btn.button.primary Apply
+            .cart-continue-checkout.flex-container.flex-dir-column
+              button.cart-continue-btn.button.secondary CONTINUE SHOPPING
+              button.cart-checkout-btn.button.primary CHECK OUT
+
+    
+    include footer
+    include scripts
