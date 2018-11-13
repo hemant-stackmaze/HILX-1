@@ -1,0 +1,57 @@
+doctype html
+html(class="no-js" lang="en")
+  include head
+  body#home-page
+    include header
+
+    section.page-content
+        .grid-container.main-checkout-box
+            h1.content-heading Checkout
+            .grid-x.grid-margin-x
+                .cell.large-8
+                    form#checkout-form
+                        h2.head-line Contact Information
+                        input#first.textbox(type="text" placeholder="First name") 
+                        input#last.textbox(type="text" placeholder="Last name") 
+                        input#email.textbox(type="text" placeholder="Email address")
+                        .keepmeupdateand.flex-container
+                            input#checkbox.checkbox(type="checkbox") 
+                            labal#keep-update.check-box-right-text Keep me update and
+                        h2.head-line Address
+                        input#street.street(type="text" placeholder="Street") 
+                        input#city.city(type="text" placeholder="City") 
+                        input#province.province(type="text" placeholder="Province")
+                        .zipcountry.flex-container.flex-dir-column
+                            .zipc.flex-container.flex-dir-row.align-justify
+                                input#zipcd.zipcode(type="text" placeholder="Zipcode")
+                                select.country
+                                    option(value="india") Country
+                        h2.head-line Shipping order
+                        .internatnlcost.flex-container.flex-dir-column
+                            .inter-cost.flex-container.flex-dir-row
+                                input#interntional-cost.radiobtn(type="radio" name="cost" value="intnl-cost")
+                                labal.update-international.radio-btn-right-text International cost 
+                        .international-express.flex-container.flex-dir-column
+                            .inter-express-cost.flex-container.flex-dir-row
+                                input#inter-express-cost.radiobtn(type="radio" name="cost" value="expss-cost")
+                                labal#update-international.radio-btn-right-text International Express cost
+                .cell.large-4.detail-payment
+                    .order-total.flex-container.flex-dir-row
+                        h4.order-total Order Total
+                    .left-col.flex-container.flex-dir-row.align-justify
+                        span Subtotal
+                        div $316.00
+                    .left-col.flex-container.flex-dir-row.align-justify
+                        span Shipping
+                        div -
+                    .left-col.flex-container.flex-dir-row.align-justify
+                        span Coupen discount
+                        div - $10.00
+                    .left-col.flex-container.flex-dir-row.align-justify
+                        span Total
+                        div $306.00
+                    .proceed-to-payment-button.flex-container.flex-dir-column
+                        button.button Proceed to Payment
+    
+    include footer
+    include scripts
