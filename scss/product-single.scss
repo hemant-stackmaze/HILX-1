@@ -78,6 +78,15 @@
   }
 
   .customizer-options-wrapper {
+    position: relative;
+
+    #customizer-options-mobile-close-btn {
+      display: none;
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: 15px;  
+    }
 
     .customizer-option {
       display: none;
