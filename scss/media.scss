@@ -182,6 +182,22 @@
     height: 300px;
   }
   //product-single-ends here ***
+  
+  // cart-page start here
+  .cart-page-title{
+    text-align: center;
+  }
+  .cart{
+    margin: 35px 0px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .cart-product-img-name{
+    width:200px;
+  }
+  .cart-product-payment-details{
+    width:235px;
+  }
 
   .page-section {
     padding: 50px 0;
