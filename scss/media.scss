@@ -181,7 +181,56 @@
   .product-image {
     height: 300px;
   }
+
+  .customizer-options-wrapper {
+    .options-inner {
+      overflow-y: auto;
+      z-index: 999;
+      position: fixed;
+      top: 0;
+      left: 0;
+      padding: 30px;
+      margin: 0;
+      width: 80%;
+      height: 100%;
+      background-color: #fff;
+      box-shadow: 5px 0px 10px rgba(0,0,0,.2); 
+    }
+  }
   //product-single-ends here ***
+
+  //lifestyle single starts here
+  .user-cover {
+    height: 280px;
+  }
+
+  .personal-heighlights {
+    .timeline {
+      margin-top: 20px;
+
+      .event {
+        justify-content: center;
+      }
+    }
+
+    .personal-heighlights-inner {
+      margin-top: 30px;
+      text-align: center;
+    }
+  }
+
+  .john-wears {
+    margin-bottom: 70px;
+
+    .section-heading {
+      margin: 40px auto 0px auto;
+    }
+
+    .product {
+      margin-bottom: 30px;
+    }
+  }
+  //lifestyle single ends here***
 
   .page-section {
     padding: 50px 0;
