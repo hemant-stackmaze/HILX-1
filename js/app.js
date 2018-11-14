@@ -130,6 +130,18 @@ $(document).ready(function() {
 
     $('.customizer-option').removeClass('active');
     $(targetId).addClass('active');
+
+    //toggle options as fixed sidebar in mobile
+    if (winWidth < 1024) {
+      $('body').css('overflow', 'hidden');
+      $('.customizer-options-wrapper .options-inner').toggleClass('visible');
+    }
+  });
+
+  //close product customizer options
+  $('#customizer-options-mobile-close-btn').click(function() {
+    $('.customizer-options-wrapper .options-inner').removeClass('visible');
+    $('body').css('overflow', 'auto');
   });
 
 
