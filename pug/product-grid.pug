@@ -42,7 +42,9 @@ section.product-grid-outer
         .pagination-wrapper.flex-container.align-center
           nav(aria-label="Pagination")
             ul.pagination
-              <li class="pagination-previous disabled">Previous <span class="show-for-sr">page</span></li>
+              li.paginationprevious.disabled 
+                a(href="#" aria-label="Previous Page") 
+                  i.fa.fa-angle-left
               li.current
                 span.show-for-sr You're on page 
                 span 1
@@ -50,13 +52,15 @@ section.product-grid-outer
                 a(href="#" aria-label="Page 2") 2
               li
                 a(href="#" aria-label="Page 3") 3
-              li.ellipsis(aria-hidden="true")
+              //li.ellipsis(aria-hidden="true")
               li
-                a(href="#" aria-label="Page 10") 10
+                a(href="#" aria-label="Page 4") 4
               li
-                a(href="#" aria-label="Page 11") 11
-              li.pagination-next
-                a(href="#" aria-label="Next page") Next 
+                a(href="#" aria-label="Page 5") 5
+              li.paginationnext
+                a(href="#" aria-label="Next page")
+                  i.fa.fa-angle-right
                   span.show-for-sr page
+            span.page-number.flex-container.align-center Page 1 of 5
 
 
