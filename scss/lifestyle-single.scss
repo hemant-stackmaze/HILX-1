@@ -1,6 +1,6 @@
 .user-cover {
   height: 500px;
-  background: url('../assets/images/story.jpg') top no-repeat;
+  background: url('../assets/images/lifestyle/lifestyle_single_grid_6.jpg') top no-repeat;
   background-size: cover;
 }
 
@@ -66,6 +66,8 @@
     height: 500px;
     margin-bottom: 30px;
     background: #eee;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
 

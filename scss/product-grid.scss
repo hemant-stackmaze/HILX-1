@@ -59,4 +59,23 @@
       }
     }
   }
+  .pagination{
+    margin-top: 70px;
+    .paginationprevious{
+      margin-right: 30px;
+    }
+    .disabled{
+      opacity: 0.5;
+    }
+    .paginationnext{
+      margin-left: 30px;
+    }
+    .current{
+      padding: 7px 16px;
+    }
+  }
+  .page-number{
+    color: #fff;
+    font-weight: lighter;
+  }
 }

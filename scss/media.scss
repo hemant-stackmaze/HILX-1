@@ -234,7 +234,104 @@
   .cart-product-img-name{
     width:200px;
   }
+  // cart-page end here
+
+  //lifestyle-page start here
+  .stories-grid{
+    .grid-block{
+      margin-bottom: 0px;
+      .top-grid{
+        margin-bottom: 0px;
+      }
+    }
+    .story{
+      margin-bottom: 30px;
+      &.small{
+        height: auto;
+
+        .image{
+          height: 350px;
+        }
+
+        .content{
+          height: auto;
+        }
+      }
+    }
+  }
+  //lifestyle-page end here***
+
+  // lifestyle-single start here 
+  .personal-heighlights {
+    padding-top: 10px;
+    padding-bottom: 10px
+  }
+
+  .section-heading {
+    padding-top: 40px;
+  }
+
+  .title {
+    text-align: center;
+    padding-top: 0px;
+    padding-bottom: 20px;
+  }
+
+  .timeline {
+    .title {
+      padding-bottom: 10px;
+    }
+  }
   
+  .page-section {
+    padding: 40px 0;
+  }
+
+  .user-info-block {
+    display: flex;
+    flex-direction: column;
+
+    .user-image {
+      align-self: center;
+    }
+
+    .user-info {
+      align-self: center;
+      display: flex;
+      flex-direction: column;
+
+      .user-map {
+        align-self: center;
+      }
+    }
+  }
+
+  //lifestyle-single end here****
+  
+  //warranty-page starts here
+  .page-banner {
+    .page-title {
+      text-align: center;
+    }
+  }
+  
+  .warranty-grid {
+    h3.warranty-grid-heading {
+      margin-top: 20px;
+    }
+  }
+  
+  .warranty-grid-item {
+    margin-bottom: 20px;
+    padding: 25px 25px 30px 25px;
+    height: 350px;
+  
+    img {
+      padding-top: 60px;
+      padding-bottom: 10px;
+    }
+  }
+  // warranty-page end here****
 
   //lifestyle single starts here
   .user-cover {
@@ -268,6 +365,8 @@
     }
   }
   //lifestyle single ends here***
+
+
 
   .page-section {
     padding: 50px 0;
