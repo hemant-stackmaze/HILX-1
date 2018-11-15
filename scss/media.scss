@@ -92,13 +92,19 @@
   
     .cat-row-single {
       transform: scale(1) translateY(0);
+
+      .product {
+        .actions {
+          transform: translateY(80px) scale(1);
+        }
+      }
     }
   
     .product {
       transform: skewX(0deg);
   
       .product-content {
-        height: 400px;
+        height: 650px;
         transform: skewX(0deg) scale(1);
       }
   
@@ -109,9 +115,15 @@
   }
 
   .hilx-stories-cta {
-    margin-top: 0;
+    margin-top: 50px;
   }
   //home page ends here ***
+
+  //newsletter cta starts
+  .newsletter-cta.page-section {
+    padding-top: 0;
+  }
+  //newsletter cta ends***
 
   //about page starts here
   .hinge {
@@ -272,6 +284,27 @@
       text-align: left;
     }
   }
+
+  //footer starts here
+  footer {
+    .instagram {
+      .insta-plugin {
+        img {
+          width: 100%;
+        }
+      }
+    }
+    
+    .actions-inner {
+      width: 100%;
+    }
+
+    .nav {
+      margin-top: 30px; 
+    }
+  }
+  //footer ends here***
+
 }
 
 /* Small only */
@@ -279,7 +312,7 @@
 
   //newsletter cta starts
   .newsletter-cta {
-    padding: 0;
+    padding-top: 0;
 
     .image {
       height: 200px;
@@ -291,6 +324,16 @@
     }
   }
   //newsletter cta ends***
+
+  //home page starts here
+  .where-will-your-adv  {  
+    .product {  
+      .product-content {
+        height: 400px;
+      }
+    }
+  }
+  //home page ends here***
 
   //about page starts here
   .featured-cta {
