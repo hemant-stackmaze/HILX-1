@@ -1,5 +1,10 @@
 header {
+  z-index: 9999;
+  position: fixed;
+  width: 100%;
   height: $header-height;
+  left: 0;
+  top: 0;
   color: #fff;
   background-color: #000;
 

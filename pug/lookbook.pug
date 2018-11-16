@@ -56,11 +56,12 @@ html(class="no-js" lang="en")
       .lookbook-situations.grid-x
         each situation in situations
           - var bg = "background-image: url('../assets/images/" + situation.image + "')"; 
-          .situation.cell.medium-6(style= bg)
-            .content.flex-container.align-bottom
-              .content-inner.flex-container.align-justify
-                h3.name= situation.name
-                button.button.secondary Shop Now
+          .situation.cell.medium-6
+            .situation-inner(style= bg)
+              .content.flex-container.align-bottom
+                .content-inner.flex-container.align-justify
+                  h3.name= situation.name
+                  button.button.secondary.shop-now-btn Shop Now
 
     include warranty
     include shop-now-cta

@@ -184,4 +184,7 @@ $(document).ready(function() {
     $('#flyout-menu').toggleClass('visible');
   });
 
+  //page nave width
+  $('.page-nav nav').width($('.page-nav nav').width());
+
 });
