@@ -13,6 +13,20 @@
     transform: scale(1.12) translateY(75px);
 
     .product {
+      &:first-child {
+        .product-content{
+          color: black;
+          .product-name {
+            font-weight: lighter;
+            font-size: 1.5em;
+            text-align: center;
+          }
+          &:before {
+            opacity: 0;
+          }
+        }
+      }
+
       .actions {
         transform: translateY(210px) scale(0.8);
       }

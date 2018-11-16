@@ -36,12 +36,14 @@
     position: relative;
     height: 700px;
     padding-left: 15%;
-    background: url('../assets/images/banner.jpg') center no-repeat;
+    background: url('../assets/images/hilx_story_title.jpg') center no-repeat;
     background-size: cover;
-    color: #fff;
+    color:black;
 
     &:before {
-      @extend #black-overlay-full;
+      //@extend #black-overlay-full;
+      opacity: 0;
+      
     }
 
     .content-inner {
