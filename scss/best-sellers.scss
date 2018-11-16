@@ -1,5 +1,6 @@
 //best sellers slider
 .best-sellers-slider {
+  margin-top: 30px;
 
   .slick-arrow {
     position: absolute;
@@ -20,9 +21,17 @@
     transform: scale(.8);
     transition: ease all .3s;
 
+    &:hover {
+      opacity: 1;
+    }
+
     &.slick-current {
       opacity: 1;
       transform: scale(1);
+    }
+
+    .buy-now-btn {
+      margin-top: 30px;
     }
   }
 }
