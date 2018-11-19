@@ -119,11 +119,6 @@
   }
   //home page ends here ***
 
-  //newsletter cta starts
-  .newsletter-cta.page-section {
-    // padding-top: 0;
-  }
-  //newsletter cta ends***
 
   //about page starts here
   .hinge {
@@ -171,6 +166,31 @@
   }
   //technology lookbook ends here
 
+  //products starts here
+  .fw-image-cta-content {
+    width: 100%;
+    text-align: center;
+  }
+
+  .product-filters-wrapper {
+    flex-direction: column;
+    margin-top: 0;
+
+    .product-filters-track {
+      overflow-y: auto;
+      margin-bottom: 25px;
+
+      .product-filters {
+        width: 800px;
+      }
+    }
+
+    .product-sort .button {
+      width: 100%;
+    }
+  }
+  //products ends here ****
+
   //product single starts here
   .product-action-bar {
     .product-title {
@@ -185,6 +205,12 @@
       &.button {
         width: auto;
       }
+    }
+  }
+
+  .in-the-box {
+    .heading-black {
+      margin: 15px auto;
     }
   }
 
@@ -203,7 +229,7 @@
 
       .options-inner {
         overflow-y: auto;
-        z-index: 999;
+        z-index: 9999;
         position: fixed;
         top: 0;
         left: -100%;
@@ -412,7 +438,8 @@
 
   //newsletter cta starts
   .newsletter-cta {
-    padding-top: 0;
+    margin-bottom: 15px;
+    padding: 0px 15px;
 
     .image {
       height: 200px;
@@ -421,6 +448,10 @@
     .content {
       height: 230px;
       padding: 0 15px;
+
+      &:before {
+        display: none;
+      }
     }
   }
   //newsletter cta ends***

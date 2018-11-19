@@ -12,10 +12,11 @@ section.product-grid-outer
     
     if (showControls)
       section.product-filters-wrapper.flex-container.align-justify
-        article.product-filters.flex-container
-          each cat in cats
-            a.product-filter.flex-container.align-center-middle(href="#" style="width:" + cat.width)
-              img(src="../assets/product_logos/" + cat.logo alt="Filter" + cat.name)
+        .product-filters-track
+          article.product-filters.flex-container
+            each cat in cats
+              a.product-filter.flex-container.align-center-middle(href="#" style="width:" + cat.width)
+                img(src="../assets/product_logos/" + cat.logo alt="Filter" + cat.name)
         article.product-sort
           button.button.secondary Sort
 
