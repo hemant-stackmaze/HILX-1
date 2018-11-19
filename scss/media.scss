@@ -397,6 +397,34 @@
   }
   //lifestyle single ends here***
 
+  // checkout start here 
+  .main-checkout-box {
+    padding-left: 15px;
+    padding-right: 15px;
+
+    #checkout-form {
+      padding-right: 0px;
+    }
+
+    .proceed-to-payment-button {
+      .button {
+        width: 100%;
+      }
+    }
+    
+    .detail-payment {
+      padding: 25px 96px 0px 23px;
+    }
+  }
+  // checkout start here 
+
+  //payment-method starts here 
+
+  #credit-card-form {
+    padding-right: 0px;
+  }
+  //payment-method starts end****
+
   //contact page starts here 
   .contact-form {
     margin-top: -170px;
@@ -438,7 +466,6 @@
     }
   }
   //footer ends here***
-
 }
 
 /* Small only */
