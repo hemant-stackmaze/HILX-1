@@ -248,15 +248,17 @@
   }
   //product-single-ends here ***
   
-  // cart-page start here
+  //cart-page start here
   .cart-page-title{
     text-align: center;
   }
+
   .cart{
     margin: 35px 0px;
     flex-direction: column;
     align-items: center;
   }
+
   .cart-product-img-name{
     width:200px;
   }
@@ -270,8 +272,10 @@
         margin-bottom: 0px;
       }
     }
+
     .story{
       margin-bottom: 30px;
+      
       &.small{
         height: auto;
 
@@ -287,7 +291,7 @@
   }
   //lifestyle-page end here***
 
-  // lifestyle-single start here 
+  //lifestyle-single start here 
   #lifestyle-single {
     .personal-heighlights {
       padding-top: 10px;
@@ -344,12 +348,12 @@
   
   .warranty-grid {
     h3.warranty-grid-heading {
-      margin-top: 20px;
+      margin-top: 40px;
     }
   }
   
   .warranty-grid-item {
-    margin-bottom: 20px;
+    margin: 7.5px 0;
     padding: 25px 25px 30px 25px;
     height: 350px;
   
@@ -393,7 +397,11 @@
   }
   //lifestyle single ends here***
 
-
+  //contact page starts here 
+  .contact-form {
+    margin-top: -170px;
+  }
+  //contact page ends here***
 
   .page-section {
     padding: 50px 0;
@@ -438,7 +446,7 @@
 
   //newsletter cta starts
   .newsletter-cta {
-    margin-bottom: 15px;
+    margin: 40px auto;
     padding: 0px 15px;
 
     .image {
@@ -458,6 +466,11 @@
 
   //home page starts here
   .where-will-your-adv  {  
+    .section-heading {
+      max-width: 300px;
+      margin-bottom: 30px;
+    }
+
     .product {  
       .product-content {
         height: 400px;
@@ -486,6 +499,22 @@
     text-align: center;
   }
   //about page ends here ***
+
+  //contact page starts here 
+  .contact-form {
+    margin: 0;
+    margin-top: -210px;
+    padding: 20px;
+  }
+
+  .contact-faq {
+    margin-top: 60px;
+  }
+
+  .contact-faq-accordion {
+    margin-top: 20px;
+  }
+  //contact page ends here***
 
   //technology lookbook starts here
   .video-cta-banner {
