@@ -130,6 +130,18 @@ $(document).ready(function() {
 
     $('.customizer-option').removeClass('active');
     $(targetId).addClass('active');
+
+    //toggle options as fixed sidebar in mobile
+    if (winWidth < 1024) {
+      $('body').css('overflow', 'hidden');
+      $('.customizer-options-wrapper .options-inner').toggleClass('visible');
+    }
+  });
+
+  //close product customizer options
+  $('#customizer-options-mobile-close-btn').click(function() {
+    $('.customizer-options-wrapper .options-inner').removeClass('visible');
+    $('body').css('overflow', 'auto');
   });
 
 
@@ -171,5 +183,8 @@ $(document).ready(function() {
   $('#flyout-menu-toggle').on('click', function() {
     $('#flyout-menu').toggleClass('visible');
   });
+
+  //page nave width
+  $('.page-nav nav').width($('.page-nav nav').width());
 
 });

@@ -8,6 +8,7 @@
   }
 
   .collections-navigation {
+    display: none;
     z-index: 9;;
     position: fixed;
     left: 10px;
@@ -35,6 +36,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    transform: skewY(-1.5deg);
 
     &:before {
       z-index: 1;
@@ -56,6 +58,7 @@
       background-position: center;
       background-repeat: no-repeat;
       background-attachment: fixed;
+      transform: skewY(1.5deg);
     }
   }
 }

@@ -10,10 +10,11 @@ html(class="no-js" lang="en")
           .title.cell.large-8.medium-6
             h1.product-title Product Title
           .actions.cell.large-4.medium-6
-            .flex-container.align-middle
+            .flex-container.align-middle.align-justify
               h2.price.action-item $80
-              button.button.secondary.action-item 5 Items
-              button.button.primary.action-item Add to Cart
+              .flex-container
+                button.button.secondary.action-item 5 Items
+                button.button.primary.action-item Add to Cart
 
     section.product-customizer
       .grid-container
@@ -41,6 +42,9 @@ html(class="no-js" lang="en")
           //- product options here -----------
           .customizer-options-wrapper.cell.large-4
             .options-inner
+
+              #customizer-options-mobile-close-btn
+                i.fa.fa-times
               
               .customizer-option#customizer-option-logos.active
                 .grid-x.grid-margin-x

@@ -35,9 +35,24 @@
 .page-nav {
   height: 60px;
 
+  .page-nav-track {
+    width: 100%;
+    overflow-x: auto;
+  }
+
+  nav {
+    height: 65px;
+  }
+
   .nav-item {
+    opacity: .5;
     margin: 0 50px;
     text-align: center;
+    transition: ease all .3s;
+
+    &:hover {
+      opacity: 1;
+    }
 
     .product-logo {
       width: 100%;
@@ -48,8 +63,7 @@
 //unfold
 .unfold {
   height: 700px;
-  background: url('../assets/images/technologylookbook_unfold.jpg') center no-repeat;
-  background-size: cover;
+  background: url('../assets/images/technologylookbook_unfold.jpg') center/cover no-repeat fixed;
 }
 
 .lookbook-hinges {
@@ -64,21 +78,44 @@
 
   @at-root .lookbook-situations {
     .situation {
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
+      overflow: hidden;
+
+      .situation-inner {
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        transition: ease all 1.5s;
+      }
+
+      .shop-now-btn {
+        opacity: 0;
+        transform: translateX(30px);
+        transition: ease all .2s;
+      }
+      
+      &:hover {
+        .situation-inner {
+          transform: scale(1.1);
+        }
+
+        .content {
+          transform: scale(.9);
+        }
+
+        .shop-now-btn {
+          opacity: 1;
+          transform: translateX(0px);
+        }
+      }
 
       .content {        
         height: 600px;
         color: #fff;
+        transition: ease all 1.5s;
 
         .content-inner {
           width: 100%;
           padding: 30px;
-        }
-
-        .name {
-
         }
       }
     }

@@ -1,5 +1,9 @@
 .where-will-your-adv  {
 
+  .section-heading {
+    margin-bottom: 100px;
+  }
+
   .cat-row-multiple,
   .cat-row-single {
     transform: scale(1.12);
@@ -7,6 +11,26 @@
 
   .cat-row-single {
     transform: scale(1.12) translateY(75px);
+
+    .product {
+      &:first-child {
+        .product-content{
+          color: black;
+          .product-name {
+            font-weight: lighter;
+            font-size: 1.5em;
+            text-align: center;
+          }
+          &:before {
+            opacity: 0;
+          }
+        }
+      }
+
+      .actions {
+        transform: translateY(210px) scale(0.8);
+      }
+    }
   }
 
   .product {
@@ -23,6 +47,11 @@
 
       &:before {
         @extend #black-overlay-full;
+      }
+
+      .product-content-inner {
+        z-index: 2;
+        margin-bottom: 60px;
       }
     }
 

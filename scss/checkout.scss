@@ -7,7 +7,6 @@
   #checkout-form {
     padding-right: 100px;
 
-
     .update-international.align-left {
       width: 20px;
       height: 20px;
@@ -16,7 +15,6 @@
     }
 
     input.zipcode {
-      
       border:none;
       border-bottom: 1px solid black;
     }
@@ -30,45 +28,22 @@
       padding-left: 15px;
     }
 
-    h6{
+    h6 {
       font-weight: 200;
     }
   }
 
-    .proceed-to-payment-button{
-      .button{
-        background-color: black;
-        color: white;
-        width: 288px;
-        height: 40px;
-        margin-left: -30px;
-        margin-top: 39px;
-      }
+  .proceed-to-payment-button {
+    .button {
+      background-color: black;
+      color: white;
+      width: 288px;
+      height: 40px;
+      margin-left: -30px;
+      margin-top: 39px;
     }
-    
-  }
-
-//globble style here
-
-input[type="checkbox"] {
-  display: inline-block;
-  vertical-align: top;
-  margin-top: 52px;
-  width:18px; 
-  height: 18px;
-  position: relative;
+  }  
 }
-
-.check-box-right-text {
-  display: inline-block;
-  font-size: 16px;
-  font-weight: 200;
-  position: relative;
-  padding-top: 50px;
-  padding-left: 5px;
-
-}
-
 
 
   
