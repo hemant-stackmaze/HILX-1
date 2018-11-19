@@ -446,7 +446,7 @@
 
   //newsletter cta starts
   .newsletter-cta {
-    margin-bottom: 15px;
+    margin: 40px auto;
     padding: 0px 15px;
 
     .image {
@@ -466,6 +466,11 @@
 
   //home page starts here
   .where-will-your-adv  {  
+    .section-heading {
+      max-width: 300px;
+      margin-bottom: 30px;
+    }
+
     .product {  
       .product-content {
         height: 400px;
