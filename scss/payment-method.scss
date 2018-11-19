@@ -1,109 +1,78 @@
-.main-Credit-Card-box {
+.main-credit-card-box {
   padding-left: 60px;
   padding-right: 60px;
   padding-top: 0px;
   padding-bottom: 0px;
  
-  .Credit-Card-form {
+  .credit-card-form {
     padding-right: 100px;
  
     input[type="date"] {
-    margin-top: 56px;
-    border: none;
-    border-bottom: 1px solid black;
-    padding-left: none;
+      margin-top: 56px;
+      border: none;
+      border-bottom: 1px solid black;
+      padding-left: none;
     }
- 
  
     input[type="text"]  {
       margin-top: 45px;
     }
  
     input[type="number"] {
-    border: none;
-    border-bottom: 1px solid black;
-    margin-top: 25px;
-    padding-left: none;
-    padding-top: 50px;
+      border: none;
+      border-bottom: 1px solid black;
+      margin-top: 25px;
+      padding-left: none;
+      padding-top: 50px;
     }
  
-    .cvv-country {
-    margin-left: 40px;
+    #cvv {
+      margin-left: 40px;
     }
  
     .add {
-    font-size: 16px;
-    padding-top: 15px;
-    padding: 20px;
-    font-weight: 200;
-    background-color:#F8F8F8;
+      font-size: 16px;
+      padding-top: 15px;
+      padding: 20px;
+      font-weight: 200;
+      background-color:#F8F8F8;
     }
  
-    .button{
-    width: 100%;
-    margin-top: 50px;
-    height: 50px;
+    .button {
+      width: 100%;
+      margin-top: 50px;
+      height: 50px;
     }
- }
+  }
  
- .icon {
-  margin-top: 60px;
- }
- }
+  .icon {
+    margin-top: 60px;
+  }
+}
  
- //globble style here
- 
- 
- .detail-payment{
+.detail-payment{
   background-color: black;
   color: white;
   height:220px;
   padding: 30px;
   margin-top: 50px;
- }
- 
- .order-total {
-  h4 {
-    background-color: black;
-    color: white;
-    width:350px;
+
+  .left-col {
+    span{
+      line-height: 35px;
+      font-weight: 200;
     }
- }
- 
- .left-col {
-  span{
-    line-height: 35px;
-    font-weight: 200;
+  
+    div {
+      line-height: 30px;
+    }
   }
- 
-  div {
-    line-height: 30px;
+
+  .order-total {
+    h4 {
+      background-color: black;
+      color: white;
+      width:350px;
+    }
   }
- }
- 
- h2.head-line {
- font-size: 30px;
- padding-top: 40px;
- font-weight: 200;
- }
- 
- input.form-componen[type="text"] {
-  border: none;
-  border-bottom: 1px solid black;
-  padding-left: 0;
-  padding-bottom: 10px;
- }
- 
- input[type="radio"] {
-  margin-top: 26px;
-  padding-left: none;
-  width: 16px;
-  height: 16px;
- }
- 
- .radio-btn-right-text {
-  font-size: 16px;
-  font-weight: 200;
-  padding-top: 23px;
-  padding-left: 5px;
- }
+}

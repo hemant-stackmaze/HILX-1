@@ -1,7 +1,7 @@
 doctype html
 html(class="no-js" lang="en")
   include head
-  body#home-page
+  body#checkout-page
     include header
 
     section.page-content
@@ -10,14 +10,14 @@ html(class="no-js" lang="en")
             .grid-x.grid-margin-x
                 .cell.large-8
                     form#checkout-form
-                        h2.head-line Contact Information
+                        h2.form-section-heading Contact Information
                         input#first.textbox(type="text" placeholder="First name") 
                         input#last.textbox(type="text" placeholder="Last name") 
                         input#email.textbox(type="text" placeholder="Email address")
                         .keepmeupdateand.flex-container
                             input#checkbox.checkbox(type="checkbox") 
                             labal#keep-update.check-box-right-text Keep me update and
-                        h2.head-line Address
+                        h2.form-section-heading Address
                         input#street.street(type="text" placeholder="Street") 
                         input#city.city(type="text" placeholder="City") 
                         input#province.province(type="text" placeholder="Province")
@@ -26,7 +26,7 @@ html(class="no-js" lang="en")
                                 input#zipcd.zipcode(type="text" placeholder="Zipcode")
                                 select.country
                                     option(value="india") Country
-                        h2.head-line Shipping order
+                        h2.form-section-heading Shipping order
                         .internatnlcost.flex-container.flex-dir-column
                             .inter-cost.flex-container.flex-dir-row
                                 input#interntional-cost.radiobtn(type="radio" name="cost" value="intnl-cost")
