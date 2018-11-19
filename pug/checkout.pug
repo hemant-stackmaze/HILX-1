@@ -11,29 +11,29 @@ html(class="no-js" lang="en")
                 .cell.large-8
                     form#checkout-form
                         h2.form-section-heading Contact Information
-                        input#first.textbox(type="text" placeholder="First name") 
-                        input#last.textbox(type="text" placeholder="Last name") 
-                        input#email.textbox(type="text" placeholder="Email address")
-                        .keepmeupdateand.flex-container
-                            input#checkbox.checkbox(type="checkbox") 
+                        input#first(type="text" placeholder="First name") 
+                        input#last(type="text" placeholder="Last name") 
+                        input#email(type="text" placeholder="Email address")
+                        .keep-me-update-and.flex-container
+                            input#check-box(type="checkbox") 
                             labal#keep-update.check-box-right-text Keep me update and
                         h2.form-section-heading Address
-                        input#street.street(type="text" placeholder="Street") 
-                        input#city.city(type="text" placeholder="City") 
-                        input#province.province(type="text" placeholder="Province")
-                        .zipcountry.flex-container.flex-dir-column
-                            .zipc.flex-container.flex-dir-row.align-justify
-                                input#zipcd.zipcode(type="text" placeholder="Zipcode")
+                        input#street(type="text" placeholder="Street") 
+                        input#city(type="text" placeholder="City") 
+                        input#province(type="text" placeholder="Province")
+                        .zip-country.flex-container.flex-dir-column
+                            .zip-c.flex-container.flex-dir-row.align-justify
+                                input#zipcd(type="text" placeholder="Zipcode")
                                 select.country
                                     option(value="india") Country
                         h2.form-section-heading Shipping order
-                        .internatnlcost.flex-container.flex-dir-column
+                        .inter-nationl-cost.flex-container.flex-dir-column
                             .inter-cost.flex-container.flex-dir-row
-                                input#interntional-cost.radiobtn(type="radio" name="cost" value="intnl-cost")
+                                input#interntional-cost(type="radio" name="cost" value="intnl-cost")
                                 labal.update-international.radio-btn-right-text International cost 
                         .international-express.flex-container.flex-dir-column
                             .inter-express-cost.flex-container.flex-dir-row
-                                input#inter-express-cost.radiobtn(type="radio" name="cost" value="expss-cost")
+                                input#inter-express-cost(type="radio" name="cost" value="expss-cost")
                                 labal#update-international.radio-btn-right-text International Express cost
                 .cell.large-4.detail-payment
                     .order-total.flex-container.flex-dir-row

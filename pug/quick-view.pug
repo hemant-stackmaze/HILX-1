@@ -1,0 +1,29 @@
+doctype html
+html(class="no-js" lang="en")
+  include head
+  body#home-page
+    include header
+
+    section.page-content
+      .grid-container.quick-view-box
+        .grid-x.grid-margin-x
+            .cell.large-6
+                .quick-view-img 
+                  img(src="../assets/images/Quick-view/quick_view_grid_1.png", alt="quick-view-img" width="438px")
+                  
+            .cell.large-6
+              .cell.large-6.product-box
+                .product-box-left.flex-container.flex-dir-colunm.align-justify
+                  .left-col.flex-container.flex-dir-row
+                    h1.content-tital Ashley Black
+                  .right-col.flex-container.flex-dir-row.align-justify
+                    h2.right-heading $80
+                .words-of-wonder-right
+                    img.logo(src="../assets/product_logos/wow.svg", alt="quick-view-img" width="118px")
+                    p.text-box Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                    button.button.view-detail-submit-btn(type="submit") VIEW DETAILS
+                    button.button.add-to-cart-submit-btn(type="submit") ADD TO CART
+                      i.fas.fa-cart-plus
+                      
+    include footer
+    include scripts
