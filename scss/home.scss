@@ -1,3 +1,12 @@
+.video-banner,
+.hilx-stories-cta,
+.best-sellers-slider-wrapper,
+.newsletter-cta,
+.where-will-your-adv {
+  z-index: 1;
+  position: relative;
+}
+
 .video-banner {
   position: relative;
   height: calc(100vh - #{$header-height});

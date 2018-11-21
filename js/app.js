@@ -38,7 +38,7 @@ $(document).ready(function() {
     ]
   });
 
-  //collections slider
+  // collections slider
   var collections = $('.collections');
 
   if(collections.length) {
@@ -47,8 +47,50 @@ $(document).ready(function() {
     var collectionsBottom = collectionsTop + collectionHeight;
   }
 
-  //$('.collection').height(winHeight);
-  //console.log(collectionsTop);
+  $('.collection').height(winHeight);
+  console.log(collectionsTop);
+
+  // var $frame  = $('.frame');
+  // var $slidee = $frame.children('.slidee').eq(0);
+  // var $wrap   = $frame.parent();
+
+  // // Call Sly on frame
+  // $frame.sly({
+  //   itemNav: 'basic',
+  //   smart: 1,
+  //   activateOn: 'click',
+  //   mouseDragging: 1,
+  //   touchDragging: 1,
+  //   releaseSwing: 1,
+  //   startAt: 3,
+  //   scrollBar: $wrap.find('.scrollbar'),
+  //   scrollBy: 1,
+  //   pagesBar: $wrap.find('.pages'),
+  //   activatePageOn: 'click',
+  //   speed: 300,
+  //   elasticBounds: 1,
+  //   easing: 'easeOutExpo',
+  //   dragHandle: 1,
+  //   dynamicHandle: 1,
+  //   clickBar: 1,
+  // });
+
+  // var collectionSlider = $('.collections').slick({
+  //   dots: true,
+  //   infinite: false,
+  //   //verticalSwiping: true,
+  //   //vertical: true,
+  // });
+
+  // collectionSlider.on('wheel', (function(e) {
+  //   e.preventDefault();
+  
+  //   if (e.originalEvent.deltaY < 0) {
+  //     $(this).slick('slickPrev');
+  //   } else {
+  //     $(this).slick('slickNext');
+  //   }
+  // }));
 
 
   $(window).scroll(function() {
@@ -71,7 +113,7 @@ $(document).ready(function() {
 
         // if (!dotNavClicked) {
           $('.item').removeClass('isActive');
-          var navItem = $('.item[data-collection-nav-index="'+ collectionIndex +'"]');
+          var navItem = $('.item[data-collection-nav-index="'+ (collectionIndex) +'"]');
 
           //if(!navItem.hasClass('isActive')) {
           navItem.addClass('isActive');
@@ -81,22 +123,29 @@ $(document).ready(function() {
     });
     
 
-    //check if collections is in viewport
-    // if (winScrollTop >= collectionsTop && winScrollTop <= collectionsBottom) {
-    //   console.log('Collection in view port');
-    //   $('.collections-navigation').hide()
-    // } else {
-    //   console.log('Collection outside view port');
-    //   $('.collections-navigation').show()
-    // }
+    // check if collections is in viewport
+    if (winScrollTop >= collectionsTop && winScrollTop <= collectionsBottom) {
+      // console.log('Collection in view port');
+      $('.collections-navigation').hide()
+    } else {
+      // console.log('Collection outside view port');
+      $('.collections-navigation').show()
+    }
   });
 
-  //collection nav dots
+  // collection nav dots
   $('[data-collection-nav-item]').on('click', function() {
     dotNavClicked = true;
     var collectionIndex = $(this).data('collection-nav-index');
-    console.log(collectionIndex);
-    var targetCollectionTop = $('[data-collection-index='+ collectionIndex +']').offset().top;
+    //console.log($('.collection').length);
+    // if (collectionIndex == $('.collection').length) {
+    //   collectionIndex -= 1;
+    // }
+    console.log('Nav:' + collectionIndex);
+    // var collectionSelector = '.collection:nth-of-type('+ (collectionIndex + 1) +')';
+    //console.log(collectionSelector);
+    console.log($('.collection').eq(collectionIndex).data('collection-index'));
+    var targetCollectionTop = $('.collection').eq(collectionIndex).offset().top;
     $('html, body').animate({scrollTop: targetCollectionTop}, 300, function() {
       dotNavClicked = false;
       console.log('scroll complete...');
