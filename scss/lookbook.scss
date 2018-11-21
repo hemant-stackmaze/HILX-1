@@ -121,3 +121,30 @@
     }
   }
 }
+.self-healing-lensetints {
+
+  .self-healing-lensetints-btn {
+    padding-bottom: 40px;
+
+    .self-healing-btn-icon {
+      span {
+        margin-left: 5px;
+        margin-top: -3px;
+      }
+    }
+  }
+  .select-color {
+    text-align: center;
+    font-size: 15px;
+    padding-bottom: 20px;
+  }
+  
+  .gradient-color-items {
+    text-align: center;
+    span {
+      background-color: grey;
+      padding: 20px;
+      margin-left:5px;
+    }
+  }
+}
