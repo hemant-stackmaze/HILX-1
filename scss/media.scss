@@ -121,6 +121,11 @@
 
 
   //about page starts here
+  #about {
+    h5, h6{
+      padding-bottom: 20px;
+    }
+  }
   .hinge {
     .image {
       max-width: 60%;
@@ -130,7 +135,7 @@
   }
 
   .page-banner {
-    height: 450px;
+    height: 250px;
   }
 
   .page-content {
