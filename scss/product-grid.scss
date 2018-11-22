@@ -28,6 +28,21 @@
       width: 80%;
     }
   }
+
+  .product-sort {
+    .sort-btn {
+
+      font-weight: 200;
+      text-transform: lowercase;
+      i {
+        margin-left: 10px;
+      }
+    }
+    
+    .dropdown-pane {
+      width: 180px;
+    }
+  }
 }
 
 .product-grid {

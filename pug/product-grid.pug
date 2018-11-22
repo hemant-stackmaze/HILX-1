@@ -18,7 +18,14 @@ section.product-grid-outer
               a.product-filter.flex-container.align-center-middle(href="#" style="width:" + cat.width)
                 img(src="../assets/product_logos/" + cat.logo alt="Filter" + cat.name)
         article.product-sort
-          button.button.secondary Sort
+          button.sort-btn.button.secondary(type="button" data-toggle="example-dropdown-1") Sort
+            i.fas.fa-caret-down
+          #example-dropdown-1.dropdown-pane(data-dropdown data-hover="true" data-hover-pane="true") 
+            ol
+              li
+                a item1
+              li
+                a item2
 
     if (hasHeading)
       h2.product-grid-heading.text-center OTHER PRODUCTS YOU MIGHT LIKE
