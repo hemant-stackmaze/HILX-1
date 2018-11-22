@@ -1,7 +1,6 @@
 footer {
   padding: 100px;
   color: #fff;
-  //background-color: #000; 
   background:#000 url("../assets/images/footer_x.svg") right -10% top -30% no-repeat;
   background-size: contain;
 
@@ -12,6 +11,10 @@ footer {
       opacity: .8;
       color: #fff;
     }
+  }
+
+  input[type="text"] {
+    padding-left: 15px;
   }
 
   .instagram {
