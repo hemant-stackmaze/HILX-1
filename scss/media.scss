@@ -119,13 +119,39 @@
   }
   //home page ends here ***
 
-
   //about page starts here
   #about {
     h5, h6{
       padding-bottom: 20px;
     }
+
+    .where-will-adv-collage {
+      h3 {
+        font-size: 3em;
+      }
+    }
+    .hinge {
+      div {
+        .title {
+          order: 2;
+        }
+        button {
+          order: 3;
+        }
+
+        img {
+          order: 1;
+        }
+      }
+    }
+     
+
+    
   }
+
+  //about page ends here ***
+  //about page starts here
+ 
   .hinge {
     .image {
       max-width: 60%;
