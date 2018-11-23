@@ -1,4 +1,6 @@
 footer {
+  position: relative;
+  z-index: 1;
   padding: 100px;
   color: #fff;
   background:#000 url("../assets/images/footer_x.svg") right -10% top -30% no-repeat;
