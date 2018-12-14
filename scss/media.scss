@@ -207,11 +207,13 @@
     
     .gradient-color-items {
       text-align: center;
+      overflow: auto;
       span {
+        padding: 20px;
         background-color: grey;
-        width: 20px;
-        height: 30px;
         margin-left:4px;
+        margin-top: 20px;
+        overflow-x: auto;
       }
     }
   }
