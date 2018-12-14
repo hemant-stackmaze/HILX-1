@@ -14,7 +14,18 @@ html(class="no-js" lang="en")
               h2.price.action-item $80
               .flex-container
                 button.button.secondary.action-item 5 Items
-                button.button.primary.action-item Add to Cart
+                .add-to-cart-icon.flex-container.flex-wrap
+                  button.button.add-to-cart(type="button" data-toggle="example-dropdown") add to cart
+                    i.fa.fa-cart-plus.add-to-card-icon
+                  #example-dropdown.dropdown-pane(data-dropdown data-auto-focus="true")
+                    .dropdown-pop-up
+                      .add-to-cart-img-text.flex-container.flex-dir-colunm.align-justify
+                        img(src="../assets/images/add-to-cart/add-to-cart-1.png", alt="add-to-cart" width: "121px")
+                        h3.content-titalalign-end Ashley Black
+                      .checkout-btn
+                        button.button.primary.cell.buy-btn CHECK OUT
+                      .continue-shopping-btn
+                        button.button.secondary.cell.customize.btn CONTINUE SHOPPING
 
     section.product-customizer
       .grid-container
