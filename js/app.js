@@ -130,7 +130,6 @@ $(document).ready(function() {
     $('body').css('overflow', 'auto');
   });
 
-
   //image compare
   if($('.image-compare').length) {
     $('.image-compare .images').twentytwenty(); 
