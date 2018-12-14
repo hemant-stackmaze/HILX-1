@@ -69,6 +69,7 @@
 
   .section-heading {
     margin-bottom: 0;
+    padding-top: 120px;
   }
 
   .section-subheading {
@@ -120,21 +121,27 @@
     }
   }
 }
-.self-healing-lensetints {
+.self-healing-lensetints, .page-section{
+  padding: 125px 0px 0px 0px;
 
   .self-healing-lensetints-btn {
     padding-bottom: 40px;
 
     .self-healing-btn-icon {
-      span {
-        margin-left: 5px;
-        margin-top: -3px;
+      i {
+        margin-top: 6px;
+        font-size: 30px;
       }
+    }
+
+    .self-healing-btn-icon-text {
+      padding-left: 10px;
+      font-size: 30px;
     }
   }
   .select-color {
     text-align: center;
-    font-size: 15px;
+    font-size: 20px;
     padding-bottom: 20px;
   }
   
@@ -142,8 +149,10 @@
     text-align: center;
     span {
       background-color: grey;
-      padding: 20px;
-      margin-left:5px;
+      width: 35px;
+      height: 35px;
+      margin-left:4px;
+      margin-top: 20px;
     }
   }
 }

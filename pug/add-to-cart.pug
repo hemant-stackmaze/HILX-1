@@ -1,0 +1,20 @@
+doctype html
+html(class="no-js" lang="en")
+  include head
+  body
+    include header
+
+    section.page-content
+      .grid-container.add-to-cart
+        .grid-x.grid-margin-x
+            .cell.large-6
+               .add-to-cart-img-text.flex-container.flex-dir-colunm.align-justify
+                  img(src="../assets/images/add-to-cart/add-to-cart-1.png", alt="add-to-cart")
+                  h1.content-tital Ashley Black
+               .checkout-btn
+                  button.button.primary.cell.medium-6.buy-btn CHECK OUT
+               .continue-shopping-btn
+                  button.button.secondary.cell.medium-6.customize.btn CONTINUE SHOPPING
+           
+    include footer
+    include scripts
