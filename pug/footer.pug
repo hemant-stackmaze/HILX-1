@@ -1,7 +1,9 @@
 footer
   .grid-container
     .footer-top.grid-x.grid-margin-x
-      .instagram.cell.medium-6.large-4
+      //-.instagram.cell.medium-2.large-2
+        button.button.primary Instagram
+      //-.instagram.cell.medium-6.large-4
         h4.heading
           a(href="#")
             i.fab.fa-instagram &nbsp;
@@ -17,7 +19,7 @@ footer
           a(href="#")
             img(src="../assets/icons/arrow.svg" alt="Open instagram" width="30px")
 
-      .actions.cell.medium-6.large-6.flex-container.align-center-middle
+      .actions.cell.medium-6.large-6.flex-container.align-left.align-self-top
         .actions-inner
           form#footer-search
             h4 Search
@@ -29,8 +31,11 @@ footer
             .flex-container
               input#footer-newsletter-email(type="text" placeholder="johndoe@email.com")
               button#footer-signup-btn.button.primary Sign Up
+          .instagram 
+            button.button.instagram-cta Instagram   
 
-      .nav.cell.large-2.flex-container.align-right
+      //-.nav.cell.large-2.flex-container.align-right
+      .nav.cell.medium-6.large-6.flex-container.align-right
         .nav-inner.flex-container.flex-dir-column.text-right
           .logo
             img(src="../assets/hilx_logo.svg" alt="HILX Logo" width="100px")

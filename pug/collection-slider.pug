@@ -19,9 +19,11 @@ section.collections
     - var bgimage = 'background-image: url("' + img + '")';
     article.collection.flex-container.align-center-middle(style= bgimage data-collection-index= index)
       - var collogo = '../assets/product_logos/' + collection.logo; 
-      - var colbgimage = 'background-image: url("' + collogo + '")';
-      .collection-name.flex-container.align-center-middle(style= colbgimage) 
+      //- - var colbgimage = 'background-image: url("' + collogo + '")';
+      //- .collection-name.flex-container.align-center-middle(style= colbgimage)
+      .collection-name.flex-container.align-center-middle 
         .actions
+          input(type='image' src=collogo alt='Logo' width='' height='')
           button.button.primary View Collection
           button.button.secondary Customize
       

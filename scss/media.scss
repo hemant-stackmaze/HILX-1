@@ -82,6 +82,12 @@
     .slick-arrow {
       display: none;
     }
+    #bestSellerModal {
+      .reveal {
+        width: 1273px !important;
+        max-width: 75rem !important;
+      }
+    }
   }
 
   .where-will-your-adv  {
@@ -165,7 +171,7 @@
     margin: 20px 0;
 
     .content-heading {
-      margin: 40px auto 20px;
+      margin: 40px 13px 20px 13px;
     }
   }
 

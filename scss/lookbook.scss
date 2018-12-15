@@ -62,18 +62,27 @@
 //unfold
 .unfold {
   height: 700px;
-  background: url('../assets/images/technologylookbook_unfold.jpg') center/cover no-repeat fixed;
+  /* background: url('../assets/images/technologylookbook_unfold.jpg') center/cover no-repeat fixed;  */
+}
+
+.video-section {
+  .section-heading {
+    margin-bottom: 0;
+  }
+  .section-subheading {
+      margin-bottom: 50px;
+  }
 }
 
 .lookbook-hinges {
 
-  .section-heading {
+  /* .section-heading {
     margin-bottom: 0;
   }
 
   .section-subheading {
     margin-bottom: 50px;
-  }
+  } */
 
   @at-root .lookbook-situations {
     .situation {

@@ -31,8 +31,10 @@
      }
    
      .view-detail-submit-btn {
-       width: 166px;
+      width: 166px;
       height: 43px;
+      background-color: #000 !important;
+      color: #fff !important;
      }
    
      .button {
@@ -41,11 +43,11 @@
       width: 166px;
       height: 43px;
       border: 1px solid black;
-   
-      &:hover {
+      
+      /* &:hover {
        background-color: black;
        color: white;
-      }
+      } */
      }
      .add-to-cart-submit-btn {
       margin-left: 20px;
