@@ -178,3 +178,36 @@
 .image-compare {
   margin-top: 30px;
 }
+
+#product-single {
+  .dropdown-pop-up {
+    display: block;
+    overflow: hidden;
+
+    .checkout-btn {
+      margin-top: 30px;
+    }
+
+    .continue-shopping-btn {
+      margin-top: 20px;
+      border: 1px solid black;
+    }
+
+    .dropdown-pane {
+      width: 30%;
+    }
+
+    .add-to-cart-img-text {
+      h3 {
+        padding-top: 10px;
+        font-size: 20px;
+        font-weight: 200;
+      }
+    }
+    
+    .add-to-card-icon {
+      margin-left: 10px;
+    }
+  }
+}
+

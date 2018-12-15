@@ -190,6 +190,41 @@
   }
   //about page ends here ***
 
+
+  //lookbook page start here 
+.self-healing-lensetints {
+  .self-healing-lensetints-btn {
+    .self-healing-btn-icon {
+      i {
+        margin-top: 1px;
+        font-size: 30px;
+      }
+    }
+  
+      .self-healing-btn-icon-text {
+        padding-left: 10px;
+        font-size: 20px;
+      }
+    }
+    .select-color {
+      text-align: center;
+      font-size: 15px;
+    }
+    
+    .gradient-color-items {
+      text-align: center;
+      overflow: auto;
+      span {
+        padding: 20px;
+        background-color: grey;
+        margin-left:4px;
+        margin-top: 20px;
+        overflow-x: auto;
+      }
+    }
+  }
+  //lookbook page ends here ***
+
   //technology lookbook starts here
   .lookbook-situations {
     .situation {
