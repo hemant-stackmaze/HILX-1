@@ -1,5 +1,5 @@
 doctype html
-html(class="no-js" lang="en")
+html(class="no-js" lang="en" style="scroll-behavior: smooth;")
   include head
   body#look-book
     include header
@@ -15,24 +15,32 @@ html(class="no-js" lang="en")
         { name: 'Zeus', logo: 'zeus.svg', width: '100px' },
         { name: 'Nautical', logo: 'nautical.svg', width: '100px' },
       ];
+    - 
+      var cats = [
+          { name: 'Unfold', logo: 'nomad.svg', width: '100px', id: '#Unfold' },
+          { name: 'High impact lenses', logo: 'unfold.svg', width: '200px', id: '#highImpact' },
+          { name: 'Self heeling lenses', logo: 'wow.svg', width: '200px', id: '#selfHealingLenseTints' },
+          { name: '350 degree hinges', logo: 'zeus.svg', width: '200px', id: '#lookbookHinges' }
+        ]; 
 
     section.page-nav
       .grid-container
         .page-nav-track
           nav.flex-container.align-center-middle
             each cat in cats
-              a.nav-item(href="#" style="width:" + cat.width)
-                img.product-logo(src="../assets/product_logos/" + cat.logo  alt= cat.name)
+              a.nav-item(href=cat.id style="width:" + cat.width) #{cat.name} 
+                //-img.product-logo(src="../assets/product_logos/" + cat.name  alt= cat.name)
 
-    section.unfold.flex-container.align-center-middle
-      //-img(src="../assets/product_logos/unfold_white.svg", alt="Unfold" width="300px")
-      .grid-container
-        //-.video-wrapper
-            img.play-video-btn(src="../assets/icons/play.svg" alt="Play video" width="60px")
-            video(x-webkit-airplay="allow" poster="../assets/images/technologylookbook_high_impact_lanses.jpg") Your browser does not support HTML5 video
+    section.unfold.flex-container.align-center-middle.page-section#Unfold
+      img(src="../assets/product_logos/unfold_white.svg" alt="Unfold" width="300px")
+      //-.grid-container
+        //-h2.title.section-heading Unfold
+        .video-wrapper
+            //-img.play-video-btn(src="../assets/icons/play.svg" alt="Play video" width="60px")
+            //-video(x-webkit-airplay="allow" poster="../assets/images/technologylookbook_high_impact_lanses.jpg") Your browser does not support HTML5 video
               source(src="../assets/videos/video.mp4" type="video/mp4")
 
-    section.high-impact.page-section.video-section
+    section.high-impact.page-section.video-section#highImpact
       .grid-container
         h2.title.section-heading HIGH IMPACT LENSES
         .video-wrapper
@@ -40,7 +48,7 @@ html(class="no-js" lang="en")
           video(x-webkit-airplay="allow" poster="../assets/images/technologylookbook_high_impact_lanses.jpg") Your browser does not support HTML5 video
             source(src="../assets/videos/video.mp4" type="video/mp4")
 
-    section.self-healing-lensetints.page-section.slider-section
+    section.self-healing-lensetints.page-section.slider-section#selfHealingLenseTints
       .grid-container
         h2.title.section-heading SELF HEALING LENSE TINTS
         .self-healing-lensetints-btn.flex-container.flex-dir-row.align-center
@@ -59,7 +67,7 @@ html(class="no-js" lang="en")
         img(src="../assets/images/fw.jpg", alt="Image")
         img(src="../assets/images/story.jpg", alt="Image")
 
-    section.page-section.video-section
+    section.page-section.video-section#lookbookHinges
       .grid-container
         h2.title.section-heading 360 HINGES
         p.section-subheading.text-center Effective in situations like

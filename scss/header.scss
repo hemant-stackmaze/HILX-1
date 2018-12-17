@@ -10,6 +10,7 @@ header {
 
   .flyout-menu-toggle-wrapper {
     margin-right: 40px;
+    font-size: 25px;
 
     .menu-toggle {
       color: #fff;
@@ -180,6 +181,12 @@ header {
       &:hover {
         opacity: .8;
       }
+    }
+  }
+
+  .mega-menu-toggle.nav-item-link, .option-dropdown {
+    i {
+      margin-left: 10px;
     }
   }
 }

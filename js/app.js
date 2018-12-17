@@ -172,4 +172,35 @@ $(document).ready(function() {
   //page nave width
   $('.page-nav nav').width($('.page-nav nav').width());
 
+  //product single sticky menu
+  $(window).scroll(function() {
+    if ($(this).scrollTop()>300)
+    {
+      $('.product-single-sticky-menu').show();
+    }
+    else
+    {
+    $('.product-single-sticky-menu').hide();
+    }
+  });
+
+  // video close
+  $(".close-reveal").click(function() {
+    $('.reveal-overlay').css('display', 'none');
+    //$('.reveal-overlay').foundation('reveal', 'close');
+  }); 
+  
+  $('a[href*=#]').bind('click', function(e) {
+    e.preventDefault(); 
+
+    var target = $(this).attr("href"); 
+
+    $('html, body').stop().animate({
+        scrollTop: $(target).offset().top
+    }, 600, function() {
+        location.hash = target; 
+    });
+
+    return false;
+  });
 });

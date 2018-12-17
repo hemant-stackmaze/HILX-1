@@ -1,3 +1,61 @@
+.product-single-sticky-menu {
+  background-color: #F4F4F5; 
+  position: sticky;
+  top: 60px;
+  height: 80px;
+  z-index: 100;
+  display: none;
+  .menu-items {
+    .sale-price {
+      margin: 0px 38px 0px 50px;
+      font-family: "Josefin Sans", sans-serif;
+      font-size: 1.5625em;
+      font-weight: 300;
+    }
+    .product-single-menu-item-grid {
+      padding: 20px 0px; 
+      width: 160px; /* 36%; */
+      background-color: #000;
+      color: #fff;
+      .add-to-card-icon {
+        font-family: 'Segoe UI', sans-serif;
+        font-size: 1.25em;
+        font-weight: 300;
+      }
+      .title {
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 0.875em;
+        font-weight: 300;
+        text-transform: uppercase;
+      }
+      .div-dropdown {
+        .dropdown-pane {
+          width: 491px;
+          height: 318px;
+        }
+        .dropdown-pop-up {
+          display: block;
+          overflow: hidden;  
+        }
+        .add-to-cart-img-text {
+          h3 {
+            padding-top: 10px;
+            font-size: 20px;
+            font-weight: 200;
+          }
+        }
+        .checkout-btn {
+          margin-top: 30px;
+        }
+    
+        .continue-shopping-btn {
+          margin-top: 20px;
+          border: 1px solid black;
+        }
+      }
+    }  
+  }   
+}
 .product-action-bar {
   background-color: #f5f5f5;
   position: sticky;

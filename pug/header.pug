@@ -23,6 +23,7 @@ header
       nav.top-nav.flex-container.align-center-middle
         .nav-item
           a.mega-menu-toggle.nav-item-link.flex-container.align-center-middle(href="#") Shop
+            i.fas.fa-caret-down
           .mega-product-menu.mega-menu-target
             .featured.grid-x
               .product-image.cell.large-5.flex-container.align-center-middle
@@ -56,7 +57,53 @@ header
           a.nav-item-link(href="/html/lookbook.html") Technology
         .nav-item
           a.nav-item-link(href="/html/lifestyle.html") Lifestyle
-    .actions.flex-container 
-      a.login(href="#" title="Login") Login
+    .actions.flex-container.align-middle
+      button.button(type="button" data-toggle="example-dropdown-2") Login
+      #example-dropdown-2.dropdown-pane(data-dropdown data-hover="true" data-hover-pane="true") 
+        ul#example-tabs.tabs(data-tabs)
+          li.tabs-title.is-active
+            a(href="#panel1" aria-selected="true") login
+          li.tabs-title
+            a(data-tabs-target="panel2" href="#panel2") Registre
+
+        div.tabs-content(data-tabs-content="example-tabs")
+          div#panel1.tabs-panel.is-active
+            form 
+              .grid-x.grid-margin-x
+                .cell.medium-12
+                  label Email
+                  input(type="email")
+                  label password
+                  input(type="password")
+                  button.button.primary login
+
+          div#panel2.tabs-panel
+            form 
+              .grid-x.grid-margin-x
+                .cell.medium-12
+                  label Email
+                  input(type="email")
+                  label password
+                  input(type="password")
+                  button.button.primary Registre 
+                    
+           
+          
+                        
       .add-to-cart
         i.fa.fa-shopping-cart
+      .option-dropdown
+        button.button(type="button" data-toggle="example-dropdown-1") option
+          i.fas.fa-caret-down
+        #example-dropdown-1.dropdown-pane(data-dropdown data-hover="true" data-hover-pane="true") 
+          ol
+              li
+                a North America
+              li
+                a Europe
+              li
+                a South America
+              li
+                a UK
+              li
+                a Asia

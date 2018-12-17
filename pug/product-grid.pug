@@ -14,6 +14,7 @@ section.product-grid-outer
       section.product-filters-wrapper.flex-container.align-justify
         .product-filters-track
           article.product-filters.flex-container
+            button.button.primary.all-btn All
             each cat in cats
               a.product-filter.flex-container.align-center-middle(href="#" style="width:" + cat.width)
                 img(src="../assets/product_logos/" + cat.logo alt="Filter" + cat.name)

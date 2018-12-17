@@ -9,10 +9,11 @@ html(class="no-js" lang="en")
         a(data-reveal-id='videoModal' data-open="videoModal")
           img(src='../assets/icons/play.svg' alt='Play Video' width='100px')
       
-        #videoModal.reveal.large(data-reveal='' aria-hidden='true' role='dialog')
+        #videoModal.reveal.small.large(data-reveal='' aria-hidden='true' role='dialog')
+          h2#videoModalTitle Video
           .flex-video.widescreen.vimeo 
-            iframe(width='1280' height='720' src='https://www.youtube.com/embed/tgbNymZ7vqY' frameborder='0' allowfullscreen='')
-          a.close-reveal(aria-label='Close' style="position: absolute; top: 0%; right: 0%; font-size: 20px; font-family: 'Segoe UI', sans-serif; color:red;") &times;  
+            iframe(width='1280' height='720' src='//www.youtube-nocookie.com/embed/wnXCopXXblE?rel=0' frameborder='0' allowfullscreen='')
+          a.close-reveal(aria-label='Close' style="position: absolute; top: 0.95556rem; right: 1.22222rem; font-size: 25px; font-family: 'Segoe UI', sans-serif; color: #000; cursor: pointer; text-decoration: none;") &times;  
         
         h1.text OWN THE <br/> ADVENTURE
 

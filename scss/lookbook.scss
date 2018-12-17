@@ -33,17 +33,37 @@
 
 //page-nav
 .page-nav {
-
+  position: sticky;
+  top: 60px;
+  background-color: #fff;
+  z-index: 100;
   .page-nav-track {
     width: 100%;
     overflow-x: auto;
+    nav {
+      height: 65px;
+      .nav-item {
+        opacity: .5;
+        margin: 0 50px;
+        text-align: center;
+        transition: ease all .3s;
+    
+        &:hover {
+          opacity: 1;
+        }
+    
+        .product-logo {
+          width: 100%;
+        }
+      }
+    }
   }
 
-  nav {
+  /* nav {
     height: 65px;
-  }
+  } */
 
-  .nav-item {
+  /* .nav-item {
     opacity: .5;
     margin: 0 50px;
     text-align: center;
@@ -56,13 +76,14 @@
     .product-logo {
       width: 100%;
     }
-  }
+  } */
 }
 
 //unfold
 .unfold {
+  //padding-top: 20px;
   height: 700px;
-  /* background: url('../assets/images/technologylookbook_unfold.jpg') center/cover no-repeat fixed;  */
+  background: url('../assets/images/technologylookbook_unfold.jpg') center/cover no-repeat fixed; 
 }
 
 .video-section {
@@ -70,7 +91,7 @@
     margin-bottom: 0;
   }
   .section-subheading {
-      margin-bottom: 50px;
+    margin-bottom: 50px;
   }
 }
 
@@ -130,8 +151,10 @@
     }
   }
 }
-.self-healing-lensetints, .page-section{
-  padding: 125px 0px 0px 0px;
+.self-healing-lensetints {
+  &.page-section {
+    padding-bottom: 0px;
+  }
 
   .self-healing-lensetints-btn {
     padding-bottom: 40px;

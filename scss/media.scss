@@ -75,8 +75,10 @@
   .video-banner {
     .banner-content {
       margin: auto;
+      
     }
   }
+  
 
   .best-sellers-slider {
     .slick-arrow {
@@ -538,7 +540,7 @@
 
 /* Small only */
 @media screen and (max-width: 39.9375em) {
-
+  
   //newsletter cta starts
   .newsletter-cta {
     margin: 40px auto;
@@ -560,6 +562,21 @@
   //newsletter cta ends***
 
   //home page starts here
+  
+  // video starts here 
+  .reveal-overlay {
+    position: fixed;
+    top: 60px;
+    right: 40px;
+    left: 0px;
+    z-index: 1005;
+    display: none;
+    background-color: rgba(0,0,0,0.45);
+    overflow-y: scroll;
+  }
+  // video ends here  
+  
+  // where-will-your-adv starts here
   .where-will-your-adv {  
     .section-heading {
       max-width: 300px;
