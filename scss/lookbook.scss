@@ -59,29 +59,11 @@
     }
   }
 
-  /* nav {
-    height: 65px;
-  } */
-
-  /* .nav-item {
-    opacity: .5;
-    margin: 0 50px;
-    text-align: center;
-    transition: ease all .3s;
-
-    &:hover {
-      opacity: 1;
-    }
-
-    .product-logo {
-      width: 100%;
-    }
-  } */
+  
 }
 
 //unfold
 .unfold {
-  //padding-top: 20px;
   height: 700px;
   background: url('../assets/images/technologylookbook_unfold.jpg') center/cover no-repeat fixed; 
 }
@@ -97,14 +79,7 @@
 
 .lookbook-hinges {
 
-  /* .section-heading {
-    margin-bottom: 0;
-    padding-top: 120px;
-  }
-
-  .section-subheading {
-    margin-bottom: 50px;
-  } */
+  
 
   @at-root .lookbook-situations {
     .situation {

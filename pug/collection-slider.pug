@@ -2,7 +2,7 @@
   var collections = [
     { name: 'Nomad', logo: 'nomad_white.svg', image: 'nomad.jpg' },
     { name: 'Unfold', logo: 'unfold_white.svg', image: 'unfold.jpg' },
-    { name: 'World of Wonder', logo: 'wow_white.svg', image: 'wow.jpg' },
+    { name: 'World of Wonder', logo: 'Group 3867.svg', image: 'wow.jpg' },
     { name: 'Zeus', logo: 'zeus_white.svg', image: 'zeus.jpg' },
     { name: 'Nautical', logo: 'nautical_white.svg', image: 'nautical.jpg' }
   ]
@@ -19,12 +19,16 @@ section.collections
     - var bgimage = 'background-image: url("' + img + '")';
     article.collection.flex-container.align-center-middle(style= bgimage data-collection-index= index)
       - var collogo = '../assets/product_logos/' + collection.logo; 
-      //- - var colbgimage = 'background-image: url("' + collogo + '")';
-      //- .collection-name.flex-container.align-center-middle(style= colbgimage)
+      
       .collection-name.flex-container.align-center-middle 
-        .actions
-          input(type='image' src=collogo alt='Logo' width='' height='' style="margin-bottom: 10px;")
-          button.button.primary View Collection
-          button.button.secondary Customize
+        .grid-container
+          .grid-x.actions
+            .cell.medium-12
+              figure.actions-image
+                img(src="../assets/product_logos/" + collection.logo alt="Logo" class="float-center" width="" height="" style="background-size: cover;")
+            .cell.medium-6.text-center
+              button.button.primary.actions-btn View Collection
+            .cell.medium-6.text-center
+              button.button.secondary.actions-btn Customize
       
 

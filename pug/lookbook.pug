@@ -29,17 +29,11 @@ html(class="no-js" lang="en" style="scroll-behavior: smooth;")
           nav.flex-container.align-center-middle
             each cat in cats
               a.nav-item(href=cat.id style="width:" + cat.width) #{cat.name} 
-                //-img.product-logo(src="../assets/product_logos/" + cat.name  alt= cat.name)
+                
 
     section.unfold.flex-container.align-center-middle.page-section#Unfold
       img(src="../assets/product_logos/unfold_white.svg" alt="Unfold" width="300px")
-      //-.grid-container
-        //-h2.title.section-heading Unfold
-        .video-wrapper
-            //-img.play-video-btn(src="../assets/icons/play.svg" alt="Play video" width="60px")
-            //-video(x-webkit-airplay="allow" poster="../assets/images/technologylookbook_high_impact_lanses.jpg") Your browser does not support HTML5 video
-              source(src="../assets/videos/video.mp4" type="video/mp4")
-
+      
     section.high-impact.page-section.video-section#highImpact
       .grid-container
         h2.title.section-heading HIGH IMPACT LENSES
@@ -85,8 +79,6 @@ html(class="no-js" lang="en" style="scroll-behavior: smooth;")
       ]
 
     section.lookbook-hinges
-      //-h2.title.section-heading 360 HINGES
-      //-p.section-subheading.text-center Effective in situations like
       .lookbook-situations.grid-x
         each situation in situations
           - var bg = "background-image: url('../assets/images/" + situation.image + "')"; 

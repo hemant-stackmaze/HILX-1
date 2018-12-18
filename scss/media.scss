@@ -84,12 +84,12 @@
     .slick-arrow {
       display: none;
     }
-    #bestSellerModal {
+    /* #bestSellerModal {
       .reveal {
         width: 1273px !important;
         max-width: 75rem !important;
       }
-    }
+    } */
   }
 
   .where-will-your-adv  {
@@ -135,7 +135,7 @@
 
     .where-will-adv-collage {
       h3 {
-        font-size: 3em;
+        font-size: 11px;
       }
     }
     .hinge {
@@ -156,7 +156,13 @@
 
   //about page ends here ***
   //about page starts here
- 
+  #about {
+    .content-heading {
+      h5, h6 {
+        text-align: center;
+      }
+    }
+  }
   .hinge {
     .image {
       max-width: 60%;
@@ -173,7 +179,7 @@
     margin: 20px 0;
 
     .content-heading {
-      margin: 40px 13px 20px 13px;
+      margin: 40px 0px 20px 0px;
     }
   }
 
@@ -408,6 +414,8 @@
       }
     }
   }
+
+  
   //lifestyle-single end here****
   
   //warranty-page starts here
@@ -589,6 +597,19 @@
       }
     }
   }
+  // collections starts here
+  .collections {
+    .collection {
+      .collection-name {
+        .actions-image {
+          margin: 29px auto;
+          width: 100px;
+          height: 21px;
+        }
+      }
+    }
+  }   
+
   //home page ends here***
 
   //about page starts here
@@ -691,4 +712,15 @@
     }
   }
   // product single ends here ****
+  
+  // lifestyle-single starts here
+  #lifestyle-single {
+    .lifestyle-single-follow-john {
+      .section-heading {
+        font-size: 1.25rem !important;
+        margin-left: 0px;
+      }
+    }
+  }
+  //lifestyle-single ends here****
 }

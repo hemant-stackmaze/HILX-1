@@ -184,23 +184,5 @@ $(document).ready(function() {
     }
   });
 
-  // video close
-  $(".close-reveal").click(function() {
-    $('.reveal-overlay').css('display', 'none');
-    //$('.reveal-overlay').foundation('reveal', 'close');
-  }); 
-  
-  $('a[href*=#]').bind('click', function(e) {
-    e.preventDefault(); 
 
-    var target = $(this).attr("href"); 
-
-    $('html, body').stop().animate({
-        scrollTop: $(target).offset().top
-    }, 600, function() {
-        location.hash = target; 
-    });
-
-    return false;
-  });
 });

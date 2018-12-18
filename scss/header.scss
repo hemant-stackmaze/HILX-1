@@ -190,3 +190,17 @@ header {
     }
   }
 }
+header {
+  .option-dropdown {
+    ol li a {
+      font-weight: 600;
+    }
+  }
+
+  .actions {
+    .tabs-title {
+      font-weight: 600;
+    }
+  
+  }
+}

@@ -9,8 +9,9 @@ section.video-cta-banner.flex-container.align-center-middle
           h2#videoModalTitle Video
           .flex-video.widescreen.vimeo
             iframe(width='1280' height='720' src='//www.youtube-nocookie.com/embed/wnXCopXXblE?rel=0' frameborder='0' allowfullscreen='')
-          a.close-reveal(aria-label='Close' style="position: absolute; top: 0.95556rem; right: 1.22222rem; font-size: 25px; font-family: 'Segoe UI', sans-serif; color:#000; cursor: pointer; text-decoration: none;") &times;
-        //*img#banner-video-play-btn(src="../assets/icons/play.svg", alt="Play video" width="60px")
-      .content.cell.medium-6
-        h1.title= videoCtaBannerTitle 
-        p.description Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and"
+          button.close-button.pos(data-close aria-label="Close reveal" type="button")
+            span(aria-hidden="true") &times;
+        
+      //- .content.cell.medium-6
+      //-   h1.title= videoCtaBannerTitle 
+      //-   p.description Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and"

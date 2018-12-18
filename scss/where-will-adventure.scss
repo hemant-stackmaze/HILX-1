@@ -15,6 +15,7 @@
     .product {
       &:first-child {
         .product-content{
+          margin-left: 42px;
           color: black;
           .product-name {
             font-weight: lighter;

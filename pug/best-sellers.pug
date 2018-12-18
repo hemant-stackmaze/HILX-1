@@ -1,16 +1,26 @@
+- 
+  var sellers = [
+    { image: 'product.jpg', heading: 'Ashley Black 1', com: 'World of Wonder 1', mrp: '$79.00' },
+    { image: 'product.jpg', heading: 'Ashley Black 2', com: 'World of Wonder 2', mrp: '$80.00' },
+    { image: 'product.jpg', heading: 'Ashley Black 3', com: 'World of Wonder 1', mrp: '$81.00' },
+    { image: 'product.jpg', heading: 'Ashley Black 4', com: 'World of Wonder 4', mrp: '$82.00' }
+  ]; 
+
 section.best-sellers-slider-wrapper.page-section
   h2.text-center BEST SELLERS
   .best-sellers-slider.grid-container
-    each product in [1,2,3,4]
+    each seller in sellers
       article.best-product.cell.large-4.flex-container.flex-dir-column.align-center-middle.text-center(data-reveal-id='bestSellerModal' data-open="bestSellerModal")
-        img.image(src="../assets/images/product.jpg" alt="Product Image")
-        h3.title Ashley Black
-        .cat World of Wonder
-        h4.price $79.00
+        img.image(src="../assets/images/best_sellers/" + seller.image alt="Product Image")
+        h3.title #{seller.heading}
+        .cat #{seller.com}
+        h4.price #{seller.mrp}
         button.button.primary.buy-now-btn Buy Now
 
+    
     #bestSellerModal.reveal.large(data-reveal='' aria-labelledby='firstModalTitle' aria-hidden='true' role='dialog')
       include quick-view            
-      a.close-reveal(aria-label='Close' style="position: absolute; top: 5%; right: 5%; font-size: 20px; font-family: 'Segoe UI', sans-serif;") &times;  
+      button.close-button.pos(data-close aria-label="Close reveal" type="button")
+            span(aria-hidden="true") &times;
 
 

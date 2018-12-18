@@ -34,24 +34,4 @@
       margin-top: 30px;
     }
   }
-  #bestSellerModal {
-    .reveal {
-      width: 1273px !important;
-      max-width: 75rem;
-      z-index: 1006;
-      -webkit-backface-visibility: hidden;
-      backface-visibility: hidden;
-      display: none;
-      padding: 1rem;
-      border: 1px solid #cacaca;
-      border-radius: 0;
-      background-color: #fff;
-      position: relative;
-      top: 100px;
-      margin-right: auto;
-      margin-left: auto;
-      overflow-y: auto;
-    }
-  }  
-  
 }
