@@ -28,25 +28,38 @@
 
   .content {
     z-index: 2;
+    .title {
+      font-family: "Josefin Sans", sans-serif;
+      font-size: 60px;
+      font-weight: 400;
+    }
+    .description {
+      font-family: "Josefin Sans", sans-serif;
+      font-size: 20px;
+      font-weight: 100;
+    }
   }
 }
 
 //page-nav
 .page-nav {
-  position: sticky;
-  top: 60px;
-  background-color: #fff;
-  z-index: 100;
+  //position: sticky;
+  //top: 60px;
+  
   .page-nav-track {
     width: 100%;
     overflow-x: auto;
-    nav {
-      height: 65px;
+    //.nav {  
+    #nav {  
+      height: 60px; /* 65px; */
       .nav-item {
         opacity: .5;
-        margin: 0 50px;
+        margin-right: 42px;
         text-align: center;
         transition: ease all .3s;
+        font-family: "Josefin Sans", sans-serif;
+        font-size: 1em;
+        font-weight: 300;
     
         &:hover {
           opacity: 1;
@@ -57,9 +70,15 @@
         }
       }
     }
+    .sticky {
+        position: fixed;
+        top: 60px;
+        //top: 0;
+        width: 100%;
+        background-color: #fff;
+        z-index: 100;
+    }  
   }
-
-  
 }
 
 //unfold

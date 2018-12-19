@@ -544,6 +544,38 @@
     }
   }
   //footer ends here***
+  // best sellers starts
+  .product-box-left {
+    .right-col {
+      .right-heading {
+        padding-top: 0px;
+      }
+    }
+  }
+  .quick-view-box {
+    .product-box {
+      .words-of-wonder-right {
+        
+        .view-detail-submit-btn {
+          margin-bottom: 10px;
+        }
+        .add-to-cart-submit-btn {
+          margin-left: 0px;
+        }
+      }
+    }
+  }
+
+  .best-sellers-slider {
+    .slick-arrow.prev {
+      left: 50px;
+    }
+    .slick-arrow.next {
+      right: 50px;
+    } 
+  }
+  
+  // best sellers ends
 }
 
 /* Small only */
@@ -723,4 +755,57 @@
     }
   }
   //lifestyle-single ends here****
+
+  // best sellers starts
+  .product-box-left {
+    .right-col {
+      .right-heading {
+        padding-top: 0px;
+      }
+    }
+  }
+  .quick-view-box {
+    .product-box {
+      .words-of-wonder-right {
+        text-align: center;
+        .view-detail-submit-btn {
+          margin-bottom: 10px;
+        }
+        .add-to-cart-submit-btn {
+          margin-left: 0px;
+        }
+      }
+    }
+  }
+  // best sellers ends
+
+  // lookbook secondary nav starts
+  .page-nav {
+    .page-nav-track nav {
+      .nav-item {
+        margin-right: 18px;
+        font-size: 0.75em; /* 12px; */
+      }
+    } 
+  }
+  .page-nav {
+    .page-nav-track {
+      #nav {
+        .nav-item {
+          margin-right: 18px;
+          font-size: 0.75em; /* 12px; */
+        }
+      } 
+    } 
+  } 
+  
+  .video-cta-banner {
+    .content {
+      .title {
+        font-family: "Josefin Sans", sans-serif;
+        font-size: 1.875em; /* 30px; */
+        font-weight: 400;
+      }
+    } 
+  } 
 }

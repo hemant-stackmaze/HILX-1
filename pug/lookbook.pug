@@ -15,20 +15,28 @@ html(class="no-js" lang="en" style="scroll-behavior: smooth;")
         { name: 'Zeus', logo: 'zeus.svg', width: '100px' },
         { name: 'Nautical', logo: 'nautical.svg', width: '100px' },
       ];
-    - 
+    //- 
       var cats = [
           { name: 'Unfold', logo: 'nomad.svg', width: '100px', id: '#Unfold' },
           { name: 'High impact lenses', logo: 'unfold.svg', width: '200px', id: '#highImpact' },
           { name: 'Self heeling lenses', logo: 'wow.svg', width: '200px', id: '#selfHealingLenseTints' },
           { name: '350 degree hinges', logo: 'zeus.svg', width: '200px', id: '#lookbookHinges' }
-        ]; 
+        ];
+    - 
+      var cats = [
+          { name: 'Unfold', logo: 'nomad.svg', id: '#Unfold' },
+          { name: 'High impact lenses', logo: 'unfold.svg', id: '#highImpact' },
+          { name: 'Self heeling lenses', logo: 'wow.svg', id: '#selfHealingLenseTints' },
+          { name: '350 degree hinges', logo: 'zeus.svg', id: '#lookbookHinges' }
+        ];     
 
     section.page-nav
-      .grid-container
-        .page-nav-track
-          nav.flex-container.align-center-middle
-            each cat in cats
-              a.nav-item(href=cat.id style="width:" + cat.width) #{cat.name} 
+      //-.grid-container
+      .page-nav-track
+        #nav.flex-container.align-center-middle
+          each cat in cats
+            a.nav-item(href=cat.id) #{cat.name} 
+              //-a.nav-item(href=cat.id style="width:" + cat.width) #{cat.name} 
                 
 
     section.unfold.flex-container.align-center-middle.page-section#Unfold
